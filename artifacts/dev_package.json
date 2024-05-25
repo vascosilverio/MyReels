@@ -1,0 +1,104 @@
+{
+	"id": "98c3f89a-1a43-4521-94e7-9077935f0284",
+	"createdAt": "2024-05-25T05:22:41.101Z",
+	"createdBy": "admin",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/vascosilverio/Firemanager",
+		"testServers": [],
+		"packageJSON": [
+			"==OBJECT STRING==",
+			"{",
+			"  \"name\": \"Firemanager\",",
+			"  \"version\": \"1.0.0\",",
+			"  \"description\": \"A Fire Extinguisher Equipment Inspection Manager\",",
+			"  \"author\": \"Neptune Software\",",
+			"  \"license\": \"LicenseRef-LICENSE\",",
+			"  \"private\": true,",
+			"  \"scripts\": {",
+			"    \"deploy\": \"ts-node src/deploy.ts\",",
+			"    \"test\": \"jest --passWithNoTests\"",
+			"  },",
+			"  \"engines\": {",
+			"    \"node\": \"14.16.0\"",
+			"  },",
+			"  \"devDependencies\": {",
+			"    \"@types/jest\": \"^26.0.23\",",
+			"    \"typescript\": \"^4.2.3\",",
+			"    \"ts-node\": \"^10.0.0\",",
+			"    \"axios\": \"^0.21.1\",",
+			"    \"jest\": \"^27.0.4\",",
+			"    \"ts-jest\": \"^27.0.3\"",
+			"  }",
+			"}",
+			""
+		]
+	},
+	"name": "Firemanager",
+	"description": "A Fire Extinguisher Equipment Inspection Manager",
+	"ver": "24.5.25.72",
+	"enableCICD": true,
+	"apps": [],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "2fa13f0e-76dd-484e-ba30-f98b8f4dd88e",
+			"description": "Check equipment inspection insights and generate reports.",
+			"name": "Insights"
+		},
+		{
+			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
+			"description": "Administrate users, fire equipment and locations.",
+			"name": "Management"
+		},
+		{
+			"id": "013879a8-b0f5-4375-b614-d7747c1b4156",
+			"description": "Verify which equipment is assign to our locations.",
+			"name": "Mapping"
+		},
+		{
+			"id": "9449ad54-0695-49e4-b2a2-7796e2511acf",
+			"description": "Information base for maintaining fire equipment.",
+			"name": "Operations"
+		}
+	],
+	"category": [
+		{
+			"id": "37f5491e-58d6-4239-80e3-74bfe8a06455",
+			"description": null,
+			"name": "Administrative"
+		},
+		{
+			"id": "58982050-271b-489a-a6e1-7aecc3754214",
+			"description": null,
+			"name": "Operational"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "9ae32636-7137-4c7f-bae4-69c390d2456c",
+			"name": "Firemanager",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": []
+}

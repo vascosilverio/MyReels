@@ -1,0 +1,93 @@
+{
+	"id": "9ae32636-7137-4c7f-bae4-69c390d2456c",
+	"createdAt": "2024-05-25T06:11:08.945Z",
+	"createdBy": "admin",
+	"extUserRoles": [],
+	"extUserDepartments": [],
+	"catOrder": [
+		"37f5491e-58d6-4239-80e3-74bfe8a06455",
+		"58982050-271b-489a-a6e1-7aecc3754214"
+	],
+	"layout": [
+		{
+			"id": "8a491db3-49fc-4758-c9e5-e9863a0acdc9",
+			"css": "",
+			"name": "theme1",
+			"active": true,
+			"style": "<style>.nepTopMenu { background:#c9d8e7!important}.nepTopMenuActive {border-bottom: 4px solid #346187!important;}.nepTopMenu {border-bottom: 1px solid #c9d8e7 !important;}.nepNavBar { background:linear-gradient(to bottom, #2a4863, #9dc0de)}.nepNavBar {border-right: 1px solid #c9d8e7;}.nepIconActive {border-left: 4px solid orange;}.nepPage { background:linear-gradient(to bottom, #2a4863, #9dc0de)}.nepCatTitle.sapMTitle { color:#fff}.nepCatSubTitle.sapMTitle { color:#fff!important}.nepSubMenu .sapMSLITitleOnly {color:white} .nepSubMenu .sapMSTIIcon {color:white}.nepSubMenu .sapMLIB {color:white}.nepSubMenu .sapMSLIImgIcon {color:white}.nepSubMenu .sapMTreeItemBaseExpander {color:white}.nepSubMenu .sapMLIB {background: #c9d8e7}.nepSubMenu .sapMDialogScroll {background: #c9d8e7}.nepLayout .nepMainBar {background: linear-gradient(to bottom, #2a4863, #9dc0de);}.nepLayout .nepLaunchpadMenuSettings {background: linear-gradient(to bottom, #2a4863, #9dc0de);}.nepLayout .nepLaunchpadContentMenu {border-right: 1px solid linear-gradient(to bottom, #2a4863, #9dc0de);}.nepLayout .nepLaunchpadMenuOverflow {border-right: 1px solid linear-gradient(to bottom, #2a4863, #9dc0de);}.nepLayout .nepLaunchpadMenuSettings {border-left: 1px solid linear-gradient(to bottom, #2a4863, #9dc0de);}.nepLayout .nepDocPage {border-left: 1px solid linear-gradient(to bottom, #2a4863, #9dc0de);}.nepLayout .nepMainBar .nepTreeCategory .sapMTreeItemBaseExpander {color: white;}.nepLayout .nepMainBar .sapMTreeItemBase {color: white;}.nepLayout .nepMainBar .sapMSTIIcon {color: white;}.nepLayout .nepMainBar .sapMBtnIcon {color: white;}.nepLayout .nepListMenu .sapMSLITitleOnly {color: white;}.nepLayout .nepListMenu .sapMSLIImgIcon {color: white;}.nepLayout .nepMainBar .nepOpenAppsBtn .sapMBtnInner {color: white;}.nepLayout .nepMainBar .nepOpenAppsClose.sapUiIcon {color: white;}.nepLayout .nepUserActionText.sapMText {color: white !important;}</style>",
+			"topActiveColor": "#346187",
+			"topBackgroundColor": "#c9d8e7",
+			"navBackgroundColor": "linear-gradient(to bottom, #2a4863, #9dc0de)",
+			"pageBackgroundColor": "linear-gradient(to bottom, #2a4863, #9dc0de)",
+			"navBorderColor": "#c9d8e7",
+			"topBorderColor": "#c9d8e7",
+			"navPanelBackgroundColor": "#c9d8e7",
+			"navPanelTextColor": "white",
+			"navActiveColor": "orange",
+			"menuBackgroundColor": "linear-gradient(to bottom, #2a4863, #9dc0de)",
+			"menuBorderColor": "linear-gradient(to bottom, #2a4863, #9dc0de)",
+			"menuTextColor": "white",
+			"textTitleColor": "#fff",
+			"textSubTitleColor": "#fff"
+		}
+	],
+	"config": {
+		"enhancement": "",
+		"disableCustomizations": true
+	},
+	"enhancement": [],
+	"name": "Firemanager",
+	"title": null,
+	"description": null,
+	"startApp": null,
+	"startWebApp": null,
+	"customLogo": null,
+	"launchpadApp": "planet9_launchpad_standard",
+	"hideSidemenu": false,
+	"ui5Version": null,
+	"ui5Theme": null,
+	"header": "",
+	"customTheme": null,
+	"isExternal": null,
+	"emailPattern": null,
+	"loginApp": null,
+	"enableNotifications": false,
+	"defaultLoginIDP": null,
+	"publicAccess": false,
+	"css": null,
+	"limitWidth": false,
+	"searchBackgroundType": null,
+	"searchBackgroundColor": null,
+	"searchBackgroundShade": null,
+	"usedBackgroundType": null,
+	"usedBackgroundColor": null,
+	"usedBackgroundShade": null,
+	"searchEnableShadeCalc": null,
+	"usedEnableShadeCalc": null,
+	"enableTrace": false,
+	"ver": "24.5.25.651",
+	"pwa_enable": false,
+	"pwa_customImageIos": null,
+	"pwa_customImageAndroidOld": null,
+	"pwa_customImageAndroidNew": null,
+	"pwa_displayMode": null,
+	"pwa_themeColor": null,
+	"pwa_backgroundColor": null,
+	"passwordResetEmail": null,
+	"activationCodeEmail": null,
+	"package": "98c3f89a-1a43-4521-94e7-9077935f0284",
+	"cat": [
+		{
+			"id": "37f5491e-58d6-4239-80e3-74bfe8a06455",
+			"name": "Administrative",
+			"title": "Administration",
+			"ver": "24.5.25.632"
+		},
+		{
+			"id": "58982050-271b-489a-a6e1-7aecc3754214",
+			"name": "Operational",
+			"title": "Operational",
+			"ver": "24.5.25.633"
+		}
+	]
+}
