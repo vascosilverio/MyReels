@@ -1,0 +1,9 @@
+{
+	"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+	"createdAt": "2024-05-26T04:56:42.732Z",
+	"createdBy": "admin",
+	"name": "normalUser",
+	"description": "End user of the MyReels App",
+	"ver": "24.5.26.457",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

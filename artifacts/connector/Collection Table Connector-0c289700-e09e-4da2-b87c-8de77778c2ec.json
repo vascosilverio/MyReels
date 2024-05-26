@@ -1,0 +1,20 @@
+{
+	"id": "0c289700-e09e-4da2-b87c-8de77778c2ec",
+	"createdAt": "2024-05-26T05:53:51.369Z",
+	"createdBy": "admin",
+	"settings": {
+		"hasDocumentation": false,
+		"startParam": "",
+		"tableid": "7850ec31-7369-4a8b-a109-2b0d773cc88f"
+	},
+	"documentation": {
+		"content": ""
+	},
+	"name": "Collection Table Connector",
+	"description": "Movie Collection Table Connector",
+	"group": null,
+	"type": "T",
+	"ver": "24.5.26.553",
+	"disabled": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

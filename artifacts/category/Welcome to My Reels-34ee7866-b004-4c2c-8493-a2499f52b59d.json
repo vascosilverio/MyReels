@@ -1,16 +1,15 @@
 {
-	"id": "37f5491e-58d6-4239-80e3-74bfe8a06455",
-	"createdAt": "2024-05-25T06:13:57.895Z",
+	"id": "34ee7866-b004-4c2c-8493-a2499f52b59d",
+	"createdAt": "2024-05-26T05:40:57.194Z",
 	"createdBy": "admin",
 	"translation": [],
 	"tilesOrder": [
-		"32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
-		"2fa13f0e-76dd-484e-ba30-f98b8f4dd88e"
+		"013879a8-b0f5-4375-b614-d7747c1b4156"
 	],
 	"tilegroupsOrder": [],
 	"configMessage": {},
-	"title": "Administration",
-	"subTitle": "Tools to manage locations and equipment registry.",
+	"title": "My Reels",
+	"subTitle": "Movie Collection Manager",
 	"description": null,
 	"titleAlignment": null,
 	"enableFullScreen": null,
@@ -28,7 +27,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.5.25.632",
+	"ver": "24.5.26.547",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -42,7 +41,7 @@
 	"imageMobileHeight": null,
 	"imageTabletHeight": null,
 	"imageHeight": null,
-	"name": "Administrative",
+	"name": "Welcome to My Reels",
 	"cardContentWidth": null,
 	"cardContentAlign": null,
 	"cardPerRow": null,
@@ -59,20 +58,25 @@
 	"imageMobileSize": null,
 	"hideFromMenu": false,
 	"roleTag": null,
-	"package": "98c3f89a-1a43-4521-94e7-9077935f0284",
-	"roles": [],
-	"tiles": [
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": [
 		{
-			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
-			"name": "Management",
-			"title": "Management",
-			"ver": "24.5.25.638"
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"ver": "24.5.26.457"
 		},
 		{
-			"id": "2fa13f0e-76dd-484e-ba30-f98b8f4dd88e",
-			"name": "Insights",
-			"title": "Insights",
-			"ver": "24.5.25.638"
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		}
+	],
+	"tiles": [
+		{
+			"id": "013879a8-b0f5-4375-b614-d7747c1b4156",
+			"name": "My Reels",
+			"title": "My Reels",
+			"ver": "24.5.26.546"
 		}
 	]
 }

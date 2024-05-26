@@ -5,9 +5,9 @@
 	"translation": [],
 	"storeItem": {},
 	"settings": null,
-	"title": "Map",
-	"subTitle": "Location and Equipment Mapping",
-	"description": "Verify which equipment is assign to our locations.",
+	"title": "My Reels",
+	"subTitle": "My Movie Collection Manager",
+	"description": "Collect, search and discover movies.",
 	"categoryID": null,
 	"sort": null,
 	"urlApplication": null,
@@ -56,9 +56,9 @@
 	"helpText": "<p><br></p>",
 	"helpEnabled": false,
 	"openClickTile": true,
-	"ver": "24.5.25.638",
+	"ver": "24.5.26.546",
 	"actionWebApp": null,
-	"name": "Mapping",
+	"name": "My Reels",
 	"cardWidth": null,
 	"cardHeight": null,
 	"cardHeightFit": false,
@@ -72,9 +72,20 @@
 	"openText": null,
 	"imageHeight": null,
 	"bodyHeight": null,
-	"roleTag": null,
+	"roleTag": "normalUser",
 	"sapICFNode": null,
 	"actionType": "A",
-	"package": "98c3f89a-1a43-4521-94e7-9077935f0284",
-	"roles": []
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": [
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"ver": "24.5.26.457"
+		},
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		}
+	]
 }

@@ -1,11 +1,10 @@
 {
-	"id": "98c3f89a-1a43-4521-94e7-9077935f0284",
-	"createdAt": "2024-05-25T05:22:41.101Z",
+	"id": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"createdAt": "2024-05-25T02:55:32.833Z",
 	"createdBy": "admin",
 	"git": {
 		"targetServers": [],
-		"remote": "https://github.com/vascosilverio/Firemanager",
-		"testServers": [],
+		"remote": "https://github.com/vascosilverio/MyReels.git",
 		"packageJSON": [
 			"==OBJECT STRING==",
 			"{",
@@ -34,15 +33,26 @@
 			""
 		]
 	},
-	"name": "Firemanager",
-	"description": "A Fire Extinguisher Equipment Inspection Manager",
-	"ver": "24.5.25.72",
+	"name": "MyReels",
+	"description": "Movie Collection App made in Neptune DXP Open Edition",
+	"ver": "24.5.25.255",
 	"enableCICD": true,
 	"apps": [],
 	"api": [],
 	"odataSource": [],
 	"odataMock": [],
-	"dictionary": [],
+	"dictionary": [
+		{
+			"id": "e1499a2a-a7ba-4731-8b61-3d8da5195839",
+			"name": "users",
+			"description": null
+		},
+		{
+			"id": "7850ec31-7369-4a8b-a109-2b0d773cc88f",
+			"name": "collections",
+			"description": "Movie Collection"
+		}
+	],
 	"jsclass": [],
 	"jsscript_group": [],
 	"theme": [],
@@ -53,52 +63,70 @@
 	"api_group": [],
 	"tile": [
 		{
-			"id": "2fa13f0e-76dd-484e-ba30-f98b8f4dd88e",
-			"description": "Check equipment inspection insights and generate reports.",
-			"name": "Insights"
+			"id": "013879a8-b0f5-4375-b614-d7747c1b4156",
+			"description": "Collect, search and discover movies.",
+			"name": "My Reels"
 		},
 		{
 			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
-			"description": "Administrate users, fire equipment and locations.",
-			"name": "Management"
-		},
-		{
-			"id": "013879a8-b0f5-4375-b614-d7747c1b4156",
-			"description": "Verify which equipment is assign to our locations.",
-			"name": "Mapping"
-		},
-		{
-			"id": "9449ad54-0695-49e4-b2a2-7796e2511acf",
-			"description": "Information base for maintaining fire equipment.",
-			"name": "Operations"
+			"description": "Administrate users and information.",
+			"name": "My Reels Admin"
 		}
 	],
 	"category": [
 		{
-			"id": "37f5491e-58d6-4239-80e3-74bfe8a06455",
+			"id": "00bd0013-2402-4cae-be5e-f206ec660bdb",
 			"description": null,
 			"name": "Administrative"
 		},
 		{
-			"id": "58982050-271b-489a-a6e1-7aecc3754214",
+			"id": "34ee7866-b004-4c2c-8493-a2499f52b59d",
 			"description": null,
-			"name": "Operational"
+			"name": "Welcome to My Reels"
 		}
 	],
 	"launchpad": [
 		{
 			"id": "9ae32636-7137-4c7f-bae4-69c390d2456c",
-			"name": "Firemanager",
-			"description": null
+			"name": "MyReels",
+			"description": "Personal Movie Collection Page"
 		}
 	],
 	"certificates": [],
-	"role": [],
+	"role": [
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"description": "End user of the MyReels App"
+		},
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"description": "Administrator of the MyReels App"
+		}
+	],
 	"systems": [],
 	"doc": [],
 	"wf_notifications": [],
-	"department": [],
+	"department": [
+		{
+			"id": "6a4e04fc-f5c4-4956-90f3-37e511483ba4",
+			"name": "AppRoles",
+			"description": null
+		}
+	],
 	"script_scheduler": [],
 	"wf_definition": [],
-	"connector": []
+	"connector": [
+		{
+			"id": "dd1566ad-a5ca-4bac-b023-03bb7247f0c2",
+			"name": "User Table Connector",
+			"description": "normalUser Table Connector"
+		},
+		{
+			"id": "0c289700-e09e-4da2-b87c-8de77778c2ec",
+			"name": "Collection Table Connector",
+			"description": "Movie Collection Table Connector"
+		}
+	]
 }

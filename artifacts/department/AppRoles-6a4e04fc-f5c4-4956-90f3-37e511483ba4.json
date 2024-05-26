@@ -1,0 +1,15 @@
+{
+	"id": "6a4e04fc-f5c4-4956-90f3-37e511483ba4",
+	"createdAt": "2024-05-26T05:34:33.381Z",
+	"createdBy": "admin",
+	"name": "AppRoles",
+	"description": null,
+	"ver": null,
+	"parent": null,
+	"isExternal": false,
+	"idpSource": "local",
+	"idpSourceId": null,
+	"idpSourceKey": null,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": []
+}

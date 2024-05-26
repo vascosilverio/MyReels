@@ -1,0 +1,92 @@
+{
+	"id": "7850ec31-7369-4a8b-a109-2b0d773cc88f",
+	"createdAt": "2024-05-26T04:36:53.224Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "0adf9314-924d-4c73-8dda-4fdeab3b1b83",
+			"fieldName": "userId",
+			"fieldType": "uuid",
+			"isUnique": true
+		},
+		{
+			"id": "a2834346-01db-4847-810d-a486e458ae2d",
+			"fieldName": "movieId",
+			"fieldType": "text",
+			"isUnique": true
+		},
+		{
+			"id": "9fd97360-992d-4cf7-9401-213c46cf46ef",
+			"fieldName": "watched_date",
+			"fieldType": "timestamp",
+			"isNullable": true
+		},
+		{
+			"id": "7c2f28ca-e3f1-4e11-9809-cc04c064249d",
+			"fieldName": "rating",
+			"fieldType": "integer",
+			"isNullable": true
+		},
+		{
+			"id": "02c15cab-c601-46a0-dff1-a2c8830449e0",
+			"fieldName": "review",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "47c444bc-849c-42ac-b386-2977a1d30410",
+			"fieldName": "viewing_location",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "8cfd6ee4-9565-4456-e27f-79c6506e8073",
+			"fieldName": "latitude",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "64d2f732-be63-483e-a5ef-8d1a629fa271",
+			"fieldName": "longitude",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "225bab55-4ecb-4e26-ab7e-013dc3acabd7",
+			"fieldName": "favorite",
+			"fieldType": "boolean",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "collections",
+	"description": "Movie Collection",
+	"ver": "24.5.26.558",
+	"enableAudit": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"rolesRead": [
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		},
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"ver": "24.5.26.457"
+		}
+	],
+	"rolesWrite": [
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		},
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"ver": "24.5.26.457"
+		}
+	]
+}

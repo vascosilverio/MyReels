@@ -1,0 +1,44 @@
+{
+	"id": "e1499a2a-a7ba-4731-8b61-3d8da5195839",
+	"createdAt": "2024-05-26T04:31:47.835Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "eef8bfae-ded8-43b9-963d-08f18d96b1d7",
+			"fieldName": "username",
+			"fieldType": "text",
+			"isUnique": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "users",
+	"description": null,
+	"ver": "24.5.26.558",
+	"enableAudit": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"rolesRead": [
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		},
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"ver": "24.5.26.457"
+		}
+	],
+	"rolesWrite": [
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		},
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"ver": "24.5.26.457"
+		}
+	]
+}

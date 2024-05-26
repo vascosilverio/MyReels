@@ -1,16 +1,15 @@
 {
-	"id": "58982050-271b-489a-a6e1-7aecc3754214",
-	"createdAt": "2024-05-25T06:14:16.541Z",
+	"id": "00bd0013-2402-4cae-be5e-f206ec660bdb",
+	"createdAt": "2024-05-26T05:41:53.063Z",
 	"createdBy": "admin",
 	"translation": [],
 	"tilesOrder": [
-		"013879a8-b0f5-4375-b614-d7747c1b4156",
-		"9449ad54-0695-49e4-b2a2-7796e2511acf"
+		"32fbc6d5-0370-4da1-a89a-cd7bae88bbbe"
 	],
 	"tilegroupsOrder": [],
 	"configMessage": {},
-	"title": "Operational",
-	"subTitle": "Operational tools for fire equipment maintenance.",
+	"title": "My Reels Administration",
+	"subTitle": "My Reels Administration",
 	"description": null,
 	"titleAlignment": null,
 	"enableFullScreen": null,
@@ -28,7 +27,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.5.25.633",
+	"ver": "24.5.26.546",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -42,7 +41,7 @@
 	"imageMobileHeight": null,
 	"imageTabletHeight": null,
 	"imageHeight": null,
-	"name": "Operational",
+	"name": "Administrative",
 	"cardContentWidth": null,
 	"cardContentAlign": null,
 	"cardPerRow": null,
@@ -59,20 +58,20 @@
 	"imageMobileSize": null,
 	"hideFromMenu": false,
 	"roleTag": null,
-	"package": "98c3f89a-1a43-4521-94e7-9077935f0284",
-	"roles": [],
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": [
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		}
+	],
 	"tiles": [
 		{
-			"id": "013879a8-b0f5-4375-b614-d7747c1b4156",
-			"name": "Mapping",
-			"title": "Map",
-			"ver": "24.5.25.638"
-		},
-		{
-			"id": "9449ad54-0695-49e4-b2a2-7796e2511acf",
-			"name": "Operations",
-			"title": "Operations",
-			"ver": "24.5.25.638"
+			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
+			"name": "My Reels Admin",
+			"title": "My Reels Admin",
+			"ver": "24.5.26.546"
 		}
 	]
 }

@@ -1,0 +1,18 @@
+{
+	"id": "dd1566ad-a5ca-4bac-b023-03bb7247f0c2",
+	"createdAt": "2024-05-26T05:52:58.396Z",
+	"createdBy": "admin",
+	"settings": {
+		"tableid": "e1499a2a-a7ba-4731-8b61-3d8da5195839",
+		"previewable": true,
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "User Table Connector",
+	"description": "normalUser Table Connector",
+	"group": null,
+	"type": "T",
+	"ver": "24.5.26.553",
+	"disabled": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

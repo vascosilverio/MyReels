@@ -1,0 +1,87 @@
+{
+	"id": "9ae32636-7137-4c7f-bae4-69c390d2456c",
+	"createdAt": "2024-05-25T06:11:08.945Z",
+	"createdBy": "admin",
+	"extUserRoles": [
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser"
+		}
+	],
+	"extUserDepartments": [
+		{
+			"id": "6a4e04fc-f5c4-4956-90f3-37e511483ba4",
+			"name": "AppRoles"
+		}
+	],
+	"catOrder": [
+		"34ee7866-b004-4c2c-8493-a2499f52b59d",
+		"00bd0013-2402-4cae-be5e-f206ec660bdb"
+	],
+	"layout": [],
+	"config": {
+		"enhancement": "",
+		"disableCustomizations": false,
+		"hideTopHeader": false,
+		"languages": [
+			"PT",
+			"NO",
+			"EN"
+		]
+	},
+	"enhancement": [],
+	"name": "MyReels",
+	"title": "My Reels",
+	"description": "Personal Movie Collection Page",
+	"startApp": null,
+	"startWebApp": null,
+	"customLogo": null,
+	"launchpadApp": "planet9_launchpad_standard",
+	"hideSidemenu": false,
+	"ui5Version": null,
+	"ui5Theme": "sap_belize",
+	"header": "",
+	"customTheme": null,
+	"isExternal": true,
+	"emailPattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$",
+	"loginApp": null,
+	"enableNotifications": false,
+	"defaultLoginIDP": null,
+	"publicAccess": false,
+	"css": null,
+	"limitWidth": false,
+	"searchBackgroundType": null,
+	"searchBackgroundColor": null,
+	"searchBackgroundShade": null,
+	"usedBackgroundType": null,
+	"usedBackgroundColor": null,
+	"usedBackgroundShade": null,
+	"searchEnableShadeCalc": null,
+	"usedEnableShadeCalc": null,
+	"enableTrace": false,
+	"ver": "24.5.26.547",
+	"pwa_enable": false,
+	"pwa_customImageIos": null,
+	"pwa_customImageAndroidOld": null,
+	"pwa_customImageAndroidNew": null,
+	"pwa_displayMode": null,
+	"pwa_themeColor": "rgb(255,255,255)",
+	"pwa_backgroundColor": "rgb(255,255,255)",
+	"passwordResetEmail": null,
+	"activationCodeEmail": null,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"cat": [
+		{
+			"id": "34ee7866-b004-4c2c-8493-a2499f52b59d",
+			"name": "Welcome to My Reels",
+			"title": "My Reels",
+			"ver": "24.5.26.547"
+		},
+		{
+			"id": "00bd0013-2402-4cae-be5e-f206ec660bdb",
+			"name": "Administrative",
+			"title": "My Reels Administration",
+			"ver": "24.5.26.546"
+		}
+	]
+}
