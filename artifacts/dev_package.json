@@ -38,7 +38,14 @@
 	"ver": "24.5.25.255",
 	"enableCICD": true,
 	"apps": [],
-	"api": [],
+	"api": [
+		{
+			"id": "ad17505b-0ba7-4b64-8eb9-eb4b15f850b9",
+			"name": "Movie",
+			"description": "Trending Movies ",
+			"apiGroup": null
+		}
+	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [
@@ -58,7 +65,14 @@
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
-	"reports": [],
+	"reports": [
+		{
+			"id": "657f8722-35ae-455a-878d-4458163f05c6",
+			"name": "Insights",
+			"description": "",
+			"application": "planet9_adaptive_bi"
+		}
+	],
 	"api_authentication": [],
 	"api_group": [],
 	"tile": [

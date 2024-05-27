@@ -1,0 +1,42 @@
+{
+	"id": "657f8722-35ae-455a-878d-4458163f05c6",
+	"createdAt": "2024-05-27T07:50:17.334Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {},
+			"form": {},
+			"table": {}
+		},
+		"fieldCatalog": [],
+		"fieldsSel": [],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "5eb8882a-6eae-4b84-aebb-b9d6901dcce3",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "Insights",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "0c289700-e09e-4da2-b87c-8de77778c2ec",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.5.27.750",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_bi",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

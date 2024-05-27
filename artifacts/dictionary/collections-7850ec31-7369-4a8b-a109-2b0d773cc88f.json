@@ -56,13 +56,19 @@
 			"fieldName": "favorite",
 			"fieldType": "boolean",
 			"isNullable": true
+		},
+		{
+			"id": "440f89bd-402d-4082-ce0c-bac945d234ee",
+			"fieldName": "genre",
+			"fieldType": "text",
+			"isNullable": false
 		}
 	],
 	"indices": [],
 	"foreignKeys": [],
 	"name": "collections",
 	"description": "Movie Collection",
-	"ver": "24.5.26.558",
+	"ver": "24.5.26.2211",
 	"enableAudit": false,
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
 	"rolesRead": [
