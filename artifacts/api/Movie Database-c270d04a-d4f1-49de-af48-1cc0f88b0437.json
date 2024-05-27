@@ -1,0 +1,63 @@
+{
+	"id": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
+	"createdAt": "2024-05-27T19:08:54.217Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "c61f85c8-f509-4f58-a637-ddc1334631de",
+			"method": "GET",
+			"path": "/?q=(searchTerm)",
+			"description": "search",
+			"parameters": [
+				{
+					"name": "searchTerm",
+					"description": "",
+					"required": true,
+					"inPath": true,
+					"value": "",
+					"default": "a",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"content": [],
+			"summary": "search"
+		}
+	],
+	"definitions": [],
+	"documentation": [],
+	"name": "Movie Database",
+	"endpoint": "https://search.imdbot.workers.dev/",
+	"ver": "24.5.27.2152",
+	"version": null,
+	"description": "The Movie Database API",
+	"mediaType": "",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><br></p>",
+	"enableProxy": true,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+	"apiFormat": 0,
+	"roles": []
+}

@@ -1,0 +1,396 @@
+{
+	"id": "526a5da8-2bbc-4786-a367-d2867e888f6d",
+	"createdAt": "2024-05-27T20:26:04.257Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "fba48f08-e0d3-4e6e-fe4e-ac766ca16fc0",
+			"method": "GET",
+			"path": "/collections",
+			"description": "",
+			"parameters": [
+				{
+					"name": "where",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				},
+				{
+					"name": "select",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				},
+				{
+					"name": "take",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				},
+				{
+					"name": "skip",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				},
+				{
+					"name": "order",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "400",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "400",
+					"description": "Error",
+					"headers": [],
+					"body": []
+				}
+			],
+			"content": [
+				{
+					"name": "collection",
+					"objectType": "array"
+				}
+			]
+		},
+		{
+			"id": "cf77ffe4-9211-400e-d5a9-4e22e847ae82",
+			"method": "PUT",
+			"path": "/collections",
+			"description": "",
+			"parameters": [
+				{
+					"name": "where",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "400",
+					"description": "Error",
+					"headers": [],
+					"body": []
+				}
+			]
+		},
+		{
+			"id": "1c1bfa8d-5e9b-43aa-afbd-8fe16520e6b6",
+			"method": "POST",
+			"path": "/collections",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "400",
+					"description": "Error",
+					"headers": [],
+					"body": []
+				}
+			]
+		},
+		{
+			"id": "95e65722-b707-44ed-8d76-03e2a46208ab",
+			"method": "DELETE",
+			"path": "/collections",
+			"description": "",
+			"parameters": [
+				{
+					"name": "where",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "400",
+					"description": "Error",
+					"headers": [],
+					"body": []
+				}
+			]
+		},
+		{
+			"id": "934c05a5-aad4-41e7-befd-60e1eae44606",
+			"method": "GET",
+			"path": "/collections/count",
+			"description": "",
+			"parameters": [
+				{
+					"name": "",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				},
+				{
+					"status": "400",
+					"description": "Error",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "111fc71b-9f84-43de-a863-ae4135a5d5d1",
+			"name": "count",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "25ff862e-464d-4bac-c849-92706cbb2f44",
+					"name": "moviecount",
+					"objectType": "integer",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "8736f5fc-8f66-4593-bc4f-70d26697a65b",
+			"name": "collection",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "a71e5405-607d-4f8b-811f-dc12e0097cc6",
+					"name": "movieId",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "7fa4e275-014f-472c-c3b0-7b36372a8783",
+					"name": "watched_date",
+					"objectType": "object",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e23e7af5-d5f9-4fe3-c148-bbdf3d2a9125",
+					"name": "rating",
+					"objectType": "integer",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "137029d8-464f-4095-f335-8dadcb32ac4e",
+					"name": "review",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "243d4105-39a9-4952-a299-7aa92fc4c449",
+					"name": "favourite",
+					"objectType": "boolean",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "0d620726-808f-46cf-de99-30602a139f8c",
+			"name": "Error",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "098087f8-6dd2-4781-8dd9-244dfb22514d",
+					"name": "status",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "9fa56ebf-1f8b-4657-ebb1-6b5077742489",
+					"name": "message",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "Collection",
+	"endpoint": "/api/entity",
+	"ver": "24.5.27.2152",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": "<p><br></p>",
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+	"apiFormat": 0,
+	"roles": []
+}

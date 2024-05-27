@@ -16,12 +16,6 @@
 			"isUnique": true
 		},
 		{
-			"id": "9fd97360-992d-4cf7-9401-213c46cf46ef",
-			"fieldName": "watched_date",
-			"fieldType": "timestamp",
-			"isNullable": true
-		},
-		{
 			"id": "7c2f28ca-e3f1-4e11-9809-cc04c064249d",
 			"fieldName": "rating",
 			"fieldType": "integer",
@@ -34,41 +28,17 @@
 			"isNullable": true
 		},
 		{
-			"id": "47c444bc-849c-42ac-b386-2977a1d30410",
-			"fieldName": "viewing_location",
-			"fieldType": "text",
-			"isNullable": true
-		},
-		{
-			"id": "8cfd6ee4-9565-4456-e27f-79c6506e8073",
-			"fieldName": "latitude",
-			"fieldType": "text",
-			"isNullable": true
-		},
-		{
-			"id": "64d2f732-be63-483e-a5ef-8d1a629fa271",
-			"fieldName": "longitude",
-			"fieldType": "text",
-			"isNullable": true
-		},
-		{
 			"id": "225bab55-4ecb-4e26-ab7e-013dc3acabd7",
-			"fieldName": "favorite",
+			"fieldName": "favourite",
 			"fieldType": "boolean",
 			"isNullable": true
-		},
-		{
-			"id": "440f89bd-402d-4082-ce0c-bac945d234ee",
-			"fieldName": "genre",
-			"fieldType": "text",
-			"isNullable": false
 		}
 	],
 	"indices": [],
 	"foreignKeys": [],
 	"name": "collections",
 	"description": "Movie Collection",
-	"ver": "24.5.26.2211",
+	"ver": "24.5.27.2228",
 	"enableAudit": false,
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
 	"rolesRead": [

@@ -1,0 +1,31 @@
+{
+	"id": "143948ec-d7d3-40d0-a708-e57299a5355e",
+	"createdAt": "2024-05-27T16:34:23.705Z",
+	"createdBy": "admin",
+	"headers": [
+		{
+			"id": "cb1b3c23-2710-4194-c53c-b8f902e0fece"
+		}
+	],
+	"details": {
+		"subject": {},
+		"headers": [],
+		"issuer": "tmdb",
+		"secret": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZGRjODZiNDg2NjE2MWY4MjE2ZGViMzgzMGYzODBmNyIsInN1YiI6IjY2NTJhMjRiMWUxMTI3NjMyODAwOTUxOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.t6k1kSEPv6oLlJtxHS79xx58LeW4rEnlnLjXK9QU0Cw",
+		"includeRoles": false,
+		"includeGroups": false
+	},
+	"azureRelayDetails": {
+		"ns": "",
+		"path": "",
+		"keyRule": "",
+		"key": ""
+	},
+	"name": "TMDB token",
+	"description": null,
+	"type": "jwt",
+	"useCloudConnector": false,
+	"cloudConnectorType": null,
+	"ver": null,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

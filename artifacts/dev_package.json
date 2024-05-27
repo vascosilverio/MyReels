@@ -40,10 +40,16 @@
 	"apps": [],
 	"api": [
 		{
-			"id": "ad17505b-0ba7-4b64-8eb9-eb4b15f850b9",
-			"name": "Movie",
-			"description": "Trending Movies ",
-			"apiGroup": null
+			"id": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
+			"name": "Movie Database",
+			"description": "The Movie Database API",
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "526a5da8-2bbc-4786-a367-d2867e888f6d",
+			"name": "Collection",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		}
 	],
 	"odataSource": [],
@@ -73,8 +79,20 @@
 			"application": "planet9_adaptive_bi"
 		}
 	],
-	"api_authentication": [],
-	"api_group": [],
+	"api_authentication": [
+		{
+			"id": "143948ec-d7d3-40d0-a708-e57299a5355e",
+			"name": "TMDB token",
+			"description": null
+		}
+	],
+	"api_group": [
+		{
+			"id": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+			"name": "MyReels",
+			"description": null
+		}
+	],
 	"tile": [
 		{
 			"id": "013879a8-b0f5-4375-b614-d7747c1b4156",
