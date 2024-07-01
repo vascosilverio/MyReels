@@ -13,7 +13,7 @@
 			"id": "a2834346-01db-4847-810d-a486e458ae2d",
 			"fieldName": "movieId",
 			"fieldType": "text",
-			"isUnique": true
+			"isUnique": false
 		},
 		{
 			"id": "7c2f28ca-e3f1-4e11-9809-cc04c064249d",
@@ -38,7 +38,7 @@
 	"foreignKeys": [],
 	"name": "collections",
 	"description": "Movie Collection",
-	"ver": "24.5.27.2228",
+	"ver": "24.6.28.205",
 	"enableAudit": false,
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
 	"rolesRead": [

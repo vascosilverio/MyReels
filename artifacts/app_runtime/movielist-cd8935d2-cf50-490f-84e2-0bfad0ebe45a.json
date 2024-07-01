@@ -1,0 +1,106 @@
+{
+	"id": "cd8935d2-cf50-490f-84e2-0bfad0ebe45a",
+	"createdAt": "2024-06-29T03:49:08.378Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "7c54456f-be0d-4e62-e2cb-5dfc540badc7",
+					"fieldName": "oPage",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"bindingType": "u",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "f3d81223-afee-499e-ae75-6c2e2f522b49",
+					"fieldName": "oTable",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.Table",
+					"script": "",
+					"bindingType": "h",
+					"modelPath": "results",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "41950b3a-9c5a-49c4-d0b1-894ea82c2a18",
+					"fieldName": "colItemoTable",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.ColumnListItem",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "b05feb91-56b9-49ef-9cf2-c0bf2e33eb84",
+							"fieldName": "txtoTabletitle",
+							"fieldParent": "41950b3a-9c5a-49c4-d0b1-894ea82c2a18",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "{title}",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "24.6.30.333",
+	"application": "movielist",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": true,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"apis": [],
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

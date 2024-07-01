@@ -31,14 +31,52 @@
 			"  }",
 			"}",
 			""
-		]
+		],
+		"testServers": []
 	},
 	"name": "MyReels",
 	"description": "Movie Collection App made in Neptune DXP Open Edition",
-	"ver": "24.5.25.255",
+	"ver": "24.7.1.622",
 	"enableCICD": true,
-	"apps": [],
+	"apps": [
+		{
+			"id": "be997170-7abb-44da-aa32-1251ae59feab",
+			"application": "asd",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "e268ff71-2572-477e-9bae-9b664ad35659",
+			"application": "moviesearch",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "cd8935d2-cf50-490f-84e2-0bfad0ebe45a",
+			"application": "movielist",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "3cb63190-9076-4f6b-9528-00f9dc1ab54c",
+			"application": "seachmovie",
+			"title": "Floorplan",
+			"description": "Fiori Object Page"
+		},
+		{
+			"id": "d980f349-9e7e-4d98-adfe-63f419be2b9b",
+			"application": "sdfghf",
+			"title": "App",
+			"description": ""
+		}
+	],
 	"api": [
+		{
+			"id": "526a5da8-2bbc-4786-a367-d2867e888f6d",
+			"name": "Collection",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
 		{
 			"id": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
 			"name": "Movie Database",
@@ -46,8 +84,8 @@
 			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		},
 		{
-			"id": "526a5da8-2bbc-4786-a367-d2867e888f6d",
-			"name": "Collection",
+			"id": "b0bab1a9-8c71-4ff8-9270-2ea49b364d85",
+			"name": "MovieSearchArray",
 			"description": null,
 			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		}
@@ -66,8 +104,30 @@
 			"description": "Movie Collection"
 		}
 	],
-	"jsclass": [],
-	"jsscript_group": [],
+	"jsclass": [
+		{
+			"id": "9d02dba1-d60d-4f5a-bf29-442f24550524",
+			"name": "IdGet",
+			"description": null
+		},
+		{
+			"id": "e6d1ae28-d7a4-48a3-a498-9237743c88d6",
+			"name": "GetGlobal",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "6788ec95-ac49-48bb-9ed9-d17ccb6bdfa7",
+			"name": "IdAssociation",
+			"description": null
+		},
+		{
+			"id": "507706c8-17c4-4b84-bdc5-26c969d2e8ba",
+			"name": "MovieSearchGetArray",
+			"description": "Array from movie search"
+		}
+	],
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
@@ -77,6 +137,42 @@
 			"name": "Insights",
 			"description": "",
 			"application": "planet9_adaptive_bi"
+		},
+		{
+			"id": "13c890db-c3af-4833-a3d2-0efee4777c3c",
+			"name": "collection",
+			"description": "",
+			"application": "planet9_adaptive_tile_table"
+		},
+		{
+			"id": "374b1b24-0863-4e7c-b4c0-f3565f5913cf",
+			"name": "collectionList",
+			"description": "",
+			"application": "planet9_adaptive_tile_table"
+		},
+		{
+			"id": "51539e49-5fb4-4e8e-ad7e-b13ec3565c13",
+			"name": "MovieCollectionEdit",
+			"description": "",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "7042c56d-ff06-4636-8495-01638919c7af",
+			"name": "UsersList",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		},
+		{
+			"id": "e6b90c84-b616-4723-9ca4-97422fec39b9",
+			"name": "MovieCollectionList",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		},
+		{
+			"id": "0aea56d2-a20c-4d5b-b70f-853413e8f66e",
+			"name": "UserEdit",
+			"description": "",
+			"application": "planet9_adaptive_edit"
 		}
 	],
 	"api_authentication": [
@@ -103,18 +199,28 @@
 			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
 			"description": "Administrate users and information.",
 			"name": "My Reels Admin"
+		},
+		{
+			"id": "b0494b1d-4004-42b6-a913-e91ba1a930a8",
+			"description": null,
+			"name": "CollectionList"
+		},
+		{
+			"id": "acfed9f5-f622-4de7-9094-e5b8772caa0b",
+			"description": null,
+			"name": "UserList"
 		}
 	],
 	"category": [
 		{
-			"id": "00bd0013-2402-4cae-be5e-f206ec660bdb",
-			"description": null,
-			"name": "Administrative"
-		},
-		{
 			"id": "34ee7866-b004-4c2c-8493-a2499f52b59d",
 			"description": null,
 			"name": "Welcome to My Reels"
+		},
+		{
+			"id": "00bd0013-2402-4cae-be5e-f206ec660bdb",
+			"description": null,
+			"name": "Administrative"
 		}
 	],
 	"launchpad": [

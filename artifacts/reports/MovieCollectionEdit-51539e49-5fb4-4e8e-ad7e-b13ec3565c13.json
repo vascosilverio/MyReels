@@ -1,0 +1,177 @@
+{
+	"id": "51539e49-5fb4-4e8e-ad7e-b13ec3565c13",
+	"createdAt": "2024-06-28T00:07:47.084Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonSave": "",
+				"textButtonSave": "Save",
+				"textToastSave": "Saved",
+				"typeButtonSave": "Emphasized",
+				"iconButtonDelete": "",
+				"textButtonDelete": "Delete",
+				"textToastDelete": "Deleted",
+				"typeButtonDelete": "Reject",
+				"iconButtonAttachment": "",
+				"textButtonAttachment": "Add Attachment",
+				"typeButtonAttachment": "Transparent",
+				"tab0Text": "General",
+				"tabAText": "Attachment",
+				"tab1Text": "Tab 1",
+				"tab2Text": "Tab 2",
+				"tab3Text": "Tab 3",
+				"tab4Text": "Tab 4",
+				"tab5Text": "Tab 5",
+				"enableClose": true,
+				"enableSave": true,
+				"enableDelete": false,
+				"enableAttachment": false,
+				"enableTab1": false,
+				"enableTab2": false,
+				"enableTab3": false,
+				"enableTab4": false,
+				"enableTab5": false,
+				"enableUppercase": false,
+				"enablePadding": true,
+				"title": "Movie Edit",
+				"subTitle": "Details"
+			},
+			"form": {
+				"enableCompact": false,
+				"enableCentered": true,
+				"field2ReadOnly": "",
+				"sysvar2ReadOnly": "",
+				"operator1ReadOnly": "",
+				"operator2ReadOnly": ""
+			},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text"
+			},
+			{
+				"name": "favourite",
+				"label": "favourite",
+				"type": "boolean"
+			},
+			{
+				"name": "movieId",
+				"label": "movieId",
+				"type": "text"
+			},
+			{
+				"name": "rating",
+				"label": "rating",
+				"type": "integer"
+			},
+			{
+				"name": "review",
+				"label": "review",
+				"type": "text"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text"
+			},
+			{
+				"name": "userId",
+				"label": "userId",
+				"type": "uuid"
+			}
+		],
+		"fieldsSel": [
+			{
+				"inputFormatter": "Input",
+				"editable": true,
+				"visible": true,
+				"name": "movieId",
+				"text": "movieId",
+				"fieldPos": 1
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "userId",
+				"text": "userId",
+				"fieldPos": 2,
+				"type": "Display",
+				"scriptValue": "9d02dba1-d60d-4f5a-bf29-442f24550524",
+				"visibleFieldName": "",
+				"visibleInverse": false
+			},
+			{
+				"inputFormatter": "Input",
+				"editable": true,
+				"visible": true,
+				"name": "rating",
+				"text": "rating",
+				"fieldPos": 3
+			},
+			{
+				"inputFormatter": "Input",
+				"editable": true,
+				"visible": true,
+				"name": "review",
+				"text": "review",
+				"fieldPos": 4
+			},
+			{
+				"inputFormatter": "Input",
+				"editable": true,
+				"visible": true,
+				"name": "favourite",
+				"text": "favourite",
+				"fieldPos": 5
+			}
+		],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "08f1457f-6bb3-403e-ef8d-e4cff980fbd5",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "MovieCollectionEdit",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "0c289700-e09e-4da2-b87c-8de77778c2ec",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.6.28.1858",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_edit",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

@@ -1,0 +1,131 @@
+{
+	"id": "13c890db-c3af-4833-a3d2-0efee4777c3c",
+	"createdAt": "2024-05-28T02:26:26.869Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"paginationRows": 10,
+				"updateTime": "0.1",
+				"iconButtonCreate": "sap-icon://add",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonRun": "sap-icon://fa-solid/play",
+				"textButtonRun": "Update",
+				"typeButtonRun": "Emphasized",
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"enableRun": true,
+				"enableCreate": true,
+				"enableDelete": true,
+				"_navigationCreate": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "13c890db-c3af-4833-a3d2-0efee4777c3c",
+					"keyField": []
+				},
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "13c890db-c3af-4833-a3d2-0efee4777c3c",
+					"keyField": []
+				}
+			},
+			"form": {
+				"enableCompact": false,
+				"filterExpandable": true,
+				"headerExpanded": true,
+				"showFilter": true
+			},
+			"table": {
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"enableCompact": false,
+				"fixedLayout": true,
+				"inset": false,
+				"enableAutoPopin": false,
+				"initialGroupField": "",
+				"initialGroupOrder": "",
+				"headerText": "Movie Collection"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text"
+			},
+			{
+				"name": "favourite",
+				"label": "favourite",
+				"type": "boolean"
+			},
+			{
+				"name": "movieId",
+				"label": "movieId",
+				"type": "text"
+			},
+			{
+				"name": "rating",
+				"label": "rating",
+				"type": "integer"
+			},
+			{
+				"name": "review",
+				"label": "review",
+				"type": "text"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text"
+			},
+			{
+				"name": "userId",
+				"label": "userId",
+				"type": "uuid"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "52a50e42-4173-436b-aeab-065c0cc20cbc",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "collection",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "dd1566ad-a5ca-4bac-b023-03bb7247f0c2",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.6.27.1826",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_tile_table",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

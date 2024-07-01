@@ -5,7 +5,8 @@
 	"settings": {
 		"hasDocumentation": false,
 		"startParam": "",
-		"tableid": "7850ec31-7369-4a8b-a109-2b0d773cc88f"
+		"tableid": "7850ec31-7369-4a8b-a109-2b0d773cc88f",
+		"previewable": true
 	},
 	"documentation": {
 		"content": ""
@@ -14,7 +15,7 @@
 	"description": "Movie Collection Table Connector",
 	"group": null,
 	"type": "T",
-	"ver": "24.5.26.553",
+	"ver": "24.6.27.2322",
 	"disabled": false,
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
 }

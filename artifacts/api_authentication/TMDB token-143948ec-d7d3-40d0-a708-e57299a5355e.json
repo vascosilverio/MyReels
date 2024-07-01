@@ -4,7 +4,9 @@
 	"createdBy": "admin",
 	"headers": [
 		{
-			"id": "cb1b3c23-2710-4194-c53c-b8f902e0fece"
+			"id": "cb1b3c23-2710-4194-c53c-b8f902e0fece",
+			"name": "api_key",
+			"value": "eddc86b4866161f8216deb3830f380f7"
 		}
 	],
 	"details": {
@@ -26,6 +28,6 @@
 	"type": "jwt",
 	"useCloudConnector": false,
 	"cloudConnectorType": null,
-	"ver": null,
+	"ver": "24.6.29.239",
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
 }

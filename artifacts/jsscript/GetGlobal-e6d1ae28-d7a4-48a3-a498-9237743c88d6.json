@@ -1,0 +1,19 @@
+{
+	"id": "e6d1ae28-d7a4-48a3-a498-9237743c88d6",
+	"createdAt": "2024-06-30T02:17:53.880Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "GetGlobal",
+	"ver": "24.6.30.222",
+	"description": null,
+	"content": "",
+	"useAsGlobalScript": false,
+	"isTypescript": true,
+	"transpiledContent": "",
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "507706c8-17c4-4b84-bdc5-26c969d2e8ba",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

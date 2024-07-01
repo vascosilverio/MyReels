@@ -1,0 +1,157 @@
+{
+	"id": "374b1b24-0863-4e7c-b4c0-f3565f5913cf",
+	"createdAt": "2024-06-27T23:18:58.418Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"paginationRows": 10,
+				"updateTime": 0,
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonRun": "",
+				"textButtonRun": "Update",
+				"typeButtonRun": "Emphasized",
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"enableRun": true,
+				"enableCreate": false,
+				"enableDelete": false,
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "374b1b24-0863-4e7c-b4c0-f3565f5913cf",
+					"keyField": [
+						{
+							"fieldName": "id",
+							"key": "id",
+							"value": ""
+						},
+						{
+							"fieldName": "userId",
+							"key": "id",
+							"value": ""
+						},
+						{
+							"fieldName": "movieId",
+							"key": "id",
+							"value": ""
+						},
+						{
+							"fieldName": "rating",
+							"key": "id",
+							"value": ""
+						},
+						{
+							"fieldName": "review",
+							"key": "id",
+							"value": ""
+						},
+						{
+							"fieldName": "favourite",
+							"key": "id",
+							"value": ""
+						},
+						{
+							"fieldName": "updatedAt",
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"form": {
+				"enableCompact": false,
+				"filterExpandable": true,
+				"headerExpanded": true,
+				"showFilter": false
+			},
+			"table": {
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"enableCompact": false,
+				"fixedLayout": true,
+				"inset": false,
+				"enableAutoPopin": false
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "userId",
+				"label": "userId",
+				"type": "uuid"
+			},
+			{
+				"name": "movieId",
+				"label": "movieId",
+				"type": "text"
+			},
+			{
+				"name": "rating",
+				"label": "rating",
+				"type": "integer"
+			},
+			{
+				"name": "review",
+				"label": "review",
+				"type": "text"
+			},
+			{
+				"name": "favourite",
+				"label": "favourite",
+				"type": "boolean"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "857cd814-65d6-41c6-d75a-0c6638b053ce",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "collectionList",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "0c289700-e09e-4da2-b87c-8de77778c2ec",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.6.27.2330",
+	"disabled": true,
+	"appType": "A",
+	"application": "planet9_adaptive_tile_table",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

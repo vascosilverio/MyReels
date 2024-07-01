@@ -7,364 +7,316 @@
 	"paths": [
 		{
 			"id": "fba48f08-e0d3-4e6e-fe4e-ac766ca16fc0",
-			"method": "GET",
 			"path": "/collections",
-			"description": "",
+			"method": "GET",
+			"headers": [],
 			"parameters": [
 				{
 					"name": "where",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
 				},
 				{
 					"name": "select",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"description": "fieldName1,fieldName2,fieldName3"
 				},
 				{
 					"name": "take",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"description": "Limit (paginated) - max number of entities that should be taken"
 				},
 				{
 					"name": "skip",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"description": "Offset (paginated) from where entities should be taken"
 				},
 				{
 					"name": "order",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
 				}
 			],
-			"headers": [],
+			"content": [],
 			"responses": [
 				{
-					"status": "400",
-					"description": "OK",
+					"status": 200,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
 				},
 				{
-					"status": "400",
-					"description": "Error",
+					"status": 400,
 					"headers": [],
-					"body": []
-				}
-			],
-			"content": [
-				{
-					"name": "collection",
-					"objectType": "array"
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
 				}
 			]
 		},
 		{
 			"id": "cf77ffe4-9211-400e-d5a9-4e22e847ae82",
-			"method": "PUT",
 			"path": "/collections",
-			"description": "",
-			"parameters": [
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
 				{
-					"name": "where",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"objectType": "array",
+					"name": "collections"
 				}
 			],
-			"headers": [],
 			"responses": [
 				{
-					"status": "200",
-					"description": "OK",
+					"status": 200,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
 				},
 				{
-					"status": "400",
-					"description": "Error",
+					"status": 400,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
 				}
 			]
 		},
 		{
 			"id": "1c1bfa8d-5e9b-43aa-afbd-8fe16520e6b6",
-			"method": "POST",
 			"path": "/collections",
-			"description": "",
-			"parameters": [],
+			"method": "POST",
 			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "collections"
+				}
+			],
 			"responses": [
 				{
-					"status": "200",
-					"description": "OK",
+					"status": 200,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
 				},
 				{
-					"status": "400",
-					"description": "Error",
+					"status": 400,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
 				}
 			]
 		},
 		{
 			"id": "95e65722-b707-44ed-8d76-03e2a46208ab",
-			"method": "DELETE",
 			"path": "/collections",
-			"description": "",
+			"method": "DELETE",
+			"headers": [],
 			"parameters": [
 				{
 					"name": "where",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
 				}
 			],
-			"headers": [],
+			"content": [],
 			"responses": [
 				{
-					"status": "200",
-					"description": "OK",
+					"status": 200,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
 				},
 				{
-					"status": "400",
-					"description": "Error",
+					"status": 400,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
 				}
 			]
 		},
 		{
 			"id": "934c05a5-aad4-41e7-befd-60e1eae44606",
-			"method": "GET",
 			"path": "/collections/count",
-			"description": "",
+			"method": "GET",
+			"headers": [],
 			"parameters": [
 				{
-					"name": "",
-					"description": "",
-					"required": false,
-					"inPath": false,
-					"value": "",
-					"default": "",
-					"example": ""
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
 				}
 			],
-			"headers": [],
+			"content": [],
 			"responses": [
 				{
-					"status": "200",
-					"description": "OK",
+					"status": 200,
 					"headers": [],
-					"body": []
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
 				},
 				{
-					"status": "400",
-					"description": "Error",
+					"status": 400,
 					"headers": [],
-					"body": [],
-					"content": []
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
 				}
 			]
 		}
 	],
 	"definitions": [
 		{
-			"id": "111fc71b-9f84-43de-a863-ae4135a5d5d1",
-			"name": "count",
-			"description": "",
-			"isInclude": false,
+			"id": "44f28395-230f-4320-aa6d-f6eca4a0979b",
+			"name": "collections",
 			"properties": [
 				{
-					"id": "25ff862e-464d-4bac-c849-92706cbb2f44",
-					"name": "moviecount",
-					"objectType": "integer",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
-				}
-			]
-		},
-		{
-			"id": "8736f5fc-8f66-4593-bc4f-70d26697a65b",
-			"name": "collection",
-			"description": "",
-			"isInclude": false,
-			"properties": [
+					"id": "6d4c5778-6dfc-40f2-fe8f-685f080de448",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
 				{
-					"id": "a71e5405-607d-4f8b-811f-dc12e0097cc6",
+					"id": "9dd8577d-2a78-4121-ad6c-430460104582",
+					"parent": "",
+					"name": "userId",
+					"objectType": "uuid"
+				},
+				{
+					"id": "2119efc9-0f81-4b90-fbe6-1a8d5d87ba23",
+					"parent": "",
 					"name": "movieId",
-					"objectType": "string",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "string"
 				},
 				{
-					"id": "7fa4e275-014f-472c-c3b0-7b36372a8783",
-					"name": "watched_date",
-					"objectType": "object",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": true,
-					"enableValueHelp": false,
-					"canAddSubNode": true,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
-				},
-				{
-					"id": "e23e7af5-d5f9-4fe3-c148-bbdf3d2a9125",
+					"id": "23e7c4be-251e-48eb-8813-ca2d6de075bd",
+					"parent": "",
 					"name": "rating",
-					"objectType": "integer",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "integer"
 				},
 				{
-					"id": "137029d8-464f-4095-f335-8dadcb32ac4e",
+					"id": "0ebecca3-b1a5-4b33-8776-371d8fb7b3b0",
+					"parent": "",
 					"name": "review",
-					"objectType": "string",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "string"
 				},
 				{
-					"id": "243d4105-39a9-4952-a299-7aa92fc4c449",
+					"id": "aa758ef4-f302-4f20-c7eb-405cafd96516",
+					"parent": "",
 					"name": "favourite",
-					"objectType": "boolean",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "boolean"
+				},
+				{
+					"id": "beb397a1-af1b-48d9-c65d-f663d863411f",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "4a894d05-dace-4857-8d84-d062b0c5d79d",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "f106ac4c-5ab7-4a45-afcf-c3f4a9166a4d",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "dd230d0e-851b-4724-c360-b9a0e7059c64",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
 				}
 			]
 		},
 		{
-			"id": "0d620726-808f-46cf-de99-30602a139f8c",
+			"id": "781b797e-bb4e-49de-c5c0-2480e549059b",
 			"name": "Error",
-			"description": "",
-			"isInclude": false,
 			"properties": [
 				{
-					"id": "098087f8-6dd2-4781-8dd9-244dfb22514d",
+					"id": "dff08fc7-a2f3-41b4-c284-2fe83de4126e",
+					"parent": "",
 					"name": "status",
-					"objectType": "string",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "string"
 				},
 				{
-					"id": "9fa56ebf-1f8b-4657-ebb1-6b5077742489",
+					"id": "f74cad8c-58f2-4e95-f6b0-2710b3110303",
+					"parent": "",
 					"name": "message",
-					"objectType": "string",
-					"description": "",
-					"required": false,
-					"value": "",
-					"minLength": "",
-					"maxLength": "",
-					"default": "",
-					"example": "",
-					"isParent": false,
-					"enableValueHelp": false,
-					"canAddSubNode": false,
-					"enabled": true,
-					"showNameField": true,
-					"children": []
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "a9667ac2-8a0b-4146-b50d-731aa96cf66d",
+			"name": "count",
+			"properties": [
+				{
+					"id": "af849ddc-8709-4196-9a0e-df706e71bfec",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
 				}
 			]
 		}
@@ -372,10 +324,10 @@
 	"documentation": [],
 	"name": "Collection",
 	"endpoint": "/api/entity",
-	"ver": "24.5.27.2152",
+	"ver": "24.6.30.120",
 	"version": null,
 	"description": null,
-	"mediaType": null,
+	"mediaType": "application/json",
 	"securitySchemes": null,
 	"swaggerURI": null,
 	"swaggerSystem": null,

@@ -1,0 +1,1424 @@
+{
+	"id": "d980f349-9e7e-4d98-adfe-63f419be2b9b",
+	"createdAt": "2024-06-30T03:12:12.783Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "0f18577e-2008-4a1f-a168-d5c581610fd7",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "3db6b5eb-0332-4f77-9196-32fad0e306bd",
+					"fieldName": "MovieSearch",
+					"fieldParent": "0f18577e-2008-4a1f-a168-d5c581610fd7",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "d1d33f0d-5447-4234-ab38-5f4355933695",
+							"fieldName": "oCarousel",
+							"fieldParent": "3db6b5eb-0332-4f77-9196-32fad0e306bd",
+							"fieldType": "sap.m.Carousel",
+							"script": "",
+							"bindingType": "h",
+							"modelPath": "oMultiModel>/results",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "loop",
+									"grouping": "Properties",
+									"value": "true",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "827b9b9e-c4eb-4dc2-eb44-1a75c933e008",
+									"fieldName": "oPage",
+									"fieldParent": "d1d33f0d-5447-4234-ab38-5f4355933695",
+									"fieldType": "sap.m.Page",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "89d7a32c-328c-44a9-9f8c-3ef3b43d14f6",
+											"fieldName": "oImage1",
+											"fieldParent": "827b9b9e-c4eb-4dc2-eb44-1a75c933e008",
+											"fieldType": "sap.m.Image",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "src",
+													"grouping": "Properties",
+													"value": "https://image.tmdb.org/t/p/original{oMultiModel>poster_path}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "height",
+													"grouping": "Properties",
+													"value": "500px",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "e3d107b6-045f-4078-eca9-6a5da19aa218",
+							"fieldName": "oList",
+							"fieldParent": "3db6b5eb-0332-4f77-9196-32fad0e306bd",
+							"fieldType": "sap.m.List",
+							"script": "",
+							"bindingType": "h",
+							"modelPath": "oMultiModel>/results",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "62f5125a-f052-4a7f-957d-6617c623da1f",
+									"fieldName": "oCustomListItem",
+									"fieldParent": "e3d107b6-045f-4078-eca9-6a5da19aa218",
+									"fieldType": "sap.m.CustomListItem",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Active",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"// MULTIMODEL\r",
+												"\r",
+												"// Multimodel needs name of Multimodel \r",
+												"var context = oEvent.oSource.getBindingContext(\"oMultiModel\");  \r",
+												"console.log(context);\r",
+												"// Get Entire Model\r",
+												"var data = context.getObject();\r",
+												"console.log(data);\r",
+												"modeloSimpleForm.setData(data);\r",
+												"\r",
+												"App.to(MovieAdd);\r",
+												"\r",
+												""
+											],
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "bb2149e9-a57c-4a54-b23f-d68de1c85d76",
+											"fieldName": "oFlexBox",
+											"fieldParent": "62f5125a-f052-4a7f-957d-6617c623da1f",
+											"fieldType": "sap.m.FlexBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "09d0cc4d-2347-40c1-e442-3b6bcb349abb",
+													"fieldName": "oVBox",
+													"fieldParent": "bb2149e9-a57c-4a54-b23f-d68de1c85d76",
+													"fieldType": "sap.m.VBox",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "aca75552-dc96-4615-9407-bd633d844944",
+															"fieldName": "oPageVideoPlayer1",
+															"fieldParent": "09d0cc4d-2347-40c1-e442-3b6bcb349abb",
+															"fieldType": "sap.m.Page",
+															"script": "",
+															"bindingType": "u",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "title",
+																	"grouping": "Properties",
+																	"value": "Detail",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "f98a8ba9-c536-4478-aa59-6e0f20949376",
+																	"fieldName": "headerPageVideoPlayer1",
+																	"fieldParent": "aca75552-dc96-4615-9407-bd633d844944",
+																	"fieldType": "sap.m.Bar",
+																	"script": "",
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "position",
+																			"grouping": "Parent",
+																			"value": "setCustomHeader",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "2d898c37-a0e0-4f43-a01e-7e0f9a897f3e",
+																			"fieldName": "Middle2",
+																			"fieldParent": "f98a8ba9-c536-4478-aa59-6e0f20949376",
+																			"fieldType": "neptune.BarContent",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "position",
+																					"grouping": "Parent",
+																					"value": "ContentMiddle",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": [
+																				{
+																					"fieldNo": "4a63c16b-d1db-479e-b1e2-522f44fdf9de",
+																					"fieldName": "txtHeaderVideoPlayer1",
+																					"fieldParent": "2d898c37-a0e0-4f43-a01e-7e0f9a897f3e",
+																					"fieldType": "sap.m.Title",
+																					"script": "",
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "titleStyle",
+																							"grouping": "Properties",
+																							"value": "H3",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "Youtube Player",
+																							"script": "",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"fieldNo": "542b16ce-b723-40ec-c256-f7e072c45460",
+																	"fieldName": "VideoPlayerContainer1",
+																	"fieldParent": "aca75552-dc96-4615-9407-bd633d844944",
+																	"fieldType": "sap.m.FlexBox",
+																	"script": "",
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "width",
+																			"grouping": "Properties",
+																			"value": "100%",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "justifyContent",
+																			"grouping": "Properties",
+																			"value": "Center",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "height",
+																			"grouping": "Properties",
+																			"value": "100%",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "alignItems",
+																			"grouping": "Properties",
+																			"value": "Center",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "f79b9d27-90b0-408b-fc5a-48658c2f9132",
+																			"fieldName": "htmlDIVVideoPlayer1",
+																			"fieldParent": "542b16ce-b723-40ec-c256-f7e072c45460",
+																			"fieldType": "sap.ui.core.HTML",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [],
+																			"data": [
+																				{
+																					"fieldNo": "119d1e05-9ad9-498c-cbb6-bdc4d0bf9f67",
+																					"fieldName": "HTMLVideoPlayerTag1",
+																					"fieldParent": "f79b9d27-90b0-408b-fc5a-48658c2f9132",
+																					"fieldType": "neptune.Html",
+																					"script": "<div id=\"player\" width = \"100%\" height=\"100%\"></div>",
+																					"request": [],
+																					"response": [],
+																					"attributes": [],
+																					"data": []
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"fieldNo": "e2da89f6-6e8b-4c31-88f9-c3727f42efcd",
+																	"fieldName": "footerChapter1",
+																	"fieldParent": "aca75552-dc96-4615-9407-bd633d844944",
+																	"fieldType": "sap.m.Bar",
+																	"script": "",
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "position",
+																			"grouping": "Parent",
+																			"value": "setFooter",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "d0c44914-29e0-422a-f2a6-024b9d20dcdb",
+																			"fieldName": "Left1",
+																			"fieldParent": "e2da89f6-6e8b-4c31-88f9-c3727f42efcd",
+																			"fieldType": "neptune.BarContent",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "position",
+																					"grouping": "Parent",
+																					"value": "ContentLeft",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": [
+																				{
+																					"fieldNo": "5bb5936d-9cea-4287-dbe5-df1216410b1b",
+																					"fieldName": "butLoadVideo1",
+																					"fieldParent": "d0c44914-29e0-422a-f2a6-024b9d20dcdb",
+																					"fieldType": "sap.m.Button",
+																					"script": "",
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "type",
+																							"grouping": "Properties",
+																							"value": "Emphasized",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "tooltip",
+																							"grouping": "Properties",
+																							"value": "Load Sample Video",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "Load Video",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "press",
+																							"grouping": "Events",
+																							"value": "loadVideo();",
+																							"script": "loadVideo();",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				}
+																			]
+																		},
+																		{
+																			"fieldNo": "0d6b499c-66c4-4cdf-ec39-23093188df90",
+																			"fieldName": "Middle3",
+																			"fieldParent": "e2da89f6-6e8b-4c31-88f9-c3727f42efcd",
+																			"fieldType": "neptune.BarContent",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "position",
+																					"grouping": "Parent",
+																					"value": "ContentMiddle",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": [
+																				{
+																					"fieldNo": "c1554b7f-e277-4fd6-fa18-a0ad6074d43d",
+																					"fieldName": "butPauseVideo1",
+																					"fieldParent": "0d6b499c-66c4-4cdf-ec39-23093188df90",
+																					"fieldType": "sap.m.Button",
+																					"script": "",
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "type",
+																							"grouping": "Properties",
+																							"value": "Emphasized",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "tooltip",
+																							"grouping": "Properties",
+																							"value": "Pause Video",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "icon",
+																							"grouping": "Properties",
+																							"value": "sap-icon://fa-solid/pause",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "press",
+																							"grouping": "Events",
+																							"value": "pauseVideo();",
+																							"script": "pauseVideo();",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "03332129-cd07-41a3-ce9d-7138ae58656d",
+																					"fieldName": "butPlayVideo1",
+																					"fieldParent": "0d6b499c-66c4-4cdf-ec39-23093188df90",
+																					"fieldType": "sap.m.Button",
+																					"script": "",
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "type",
+																							"grouping": "Properties",
+																							"value": "Accept",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "tooltip",
+																							"grouping": "Properties",
+																							"value": "Play Video",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "icon",
+																							"grouping": "Properties",
+																							"value": "sap-icon://fa-solid/play",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "press",
+																							"grouping": "Events",
+																							"value": "playVideo();",
+																							"script": "playVideo();",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "c9a26663-3eb6-40c8-cdd3-5e9d7966c72c",
+																					"fieldName": "butStopVideo1",
+																					"fieldParent": "0d6b499c-66c4-4cdf-ec39-23093188df90",
+																					"fieldType": "sap.m.Button",
+																					"script": "",
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "type",
+																							"grouping": "Properties",
+																							"value": "Reject",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "tooltip",
+																							"grouping": "Properties",
+																							"value": "Stop Video",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "icon",
+																							"grouping": "Properties",
+																							"value": "sap-icon://fa-solid/stop",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "press",
+																							"grouping": "Events",
+																							"value": "stopVideo();",
+																							"script": "stopVideo();",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				}
+																			]
+																		},
+																		{
+																			"fieldNo": "4db0e80c-f16b-4b17-8f9e-a518d8f382f3",
+																			"fieldName": "Right1",
+																			"fieldParent": "e2da89f6-6e8b-4c31-88f9-c3727f42efcd",
+																			"fieldType": "neptune.BarContent",
+																			"script": "",
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "position",
+																					"grouping": "Parent",
+																					"value": "ContentRight",
+																					"script": "",
+																					"translation": []
+																				}
+																			],
+																			"data": []
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"fieldNo": "893a5897-afe9-447f-8d56-dacbb5088467",
+															"fieldName": "oImage",
+															"fieldParent": "09d0cc4d-2347-40c1-e442-3b6bcb349abb",
+															"fieldType": "sap.m.Image",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "src",
+																	"grouping": "Properties",
+																	"value": "https://image.tmdb.org/t/p/original{oMultiModel>poster_path}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "height",
+																	"grouping": "Properties",
+																	"value": "200px",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "25147eb6-792f-4b5b-f18d-15e3941f2fd3",
+															"fieldName": "oText",
+															"fieldParent": "09d0cc4d-2347-40c1-e442-3b6bcb349abb",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{oMultiModel>title}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "text",
+																	"grouping": "Formatter",
+																	"value": "Anonymous Function",
+																	"script": [
+																		"==OBJECT STRING==",
+																		"if (typeof title === \"undefined\" || title === null || title === \"\") { return; }  \r",
+																		"var formattedText = title; \r",
+																		"return formattedText;"
+																	],
+																	"translation": []
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "adbb3156-9433-455f-92b2-f6cef8c297e7",
+															"fieldName": "oText1",
+															"fieldParent": "09d0cc4d-2347-40c1-e442-3b6bcb349abb",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{oMultiModel>overview}",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "4115a1cb-25ed-422f-d56b-419185c47814",
+					"fieldName": "MovieAdd",
+					"fieldParent": "0f18577e-2008-4a1f-a168-d5c581610fd7",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "a2ac454e-becc-4d04-e7d3-190ca2d053c8",
+							"fieldName": "oSimpleForm",
+							"fieldParent": "4115a1cb-25ed-422f-d56b-419185c47814",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"bindingValue": "Generic Object",
+							"bindingType": "u",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "1a0802c2-6d2d-4d35-b253-c35bc79c1919",
+									"fieldName": "lbloSimpleFormtitle",
+									"fieldParent": "a2ac454e-becc-4d04-e7d3-190ca2d053c8",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								},
+								{
+									"fieldNo": "70c18741-2b27-4a84-9d39-26773ee6694d",
+									"fieldName": "txtoSimpleFormtitle",
+									"fieldParent": "a2ac454e-becc-4d04-e7d3-190ca2d053c8",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/title}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "f003101c-2f4f-4c2d-ec38-a9d66b430986",
+					"fieldName": "oRestAPI1",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"restSource": "526a5da8-2bbc-4786-a367-d2867e888f6d",
+					"restOperation": "fba48f08-e0d3-4e6e-fe4e-ac766ca16fc0",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "b936734c-5c08-4984-bf17-9ad78c2e54df",
+					"fieldName": "oMultiModel",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"bindingValue": "Movie Database>MoviesArray",
+					"bindingType": "u",
+					"bindingSource": "API",
+					"bindingParentID": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
+					"bindingPathID": "5f222dc6-b649-4164-a11b-de3d282aef00",
+					"modelName": "oMultiModel",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "f02fbda6-e104-4236-c616-4db794b53531",
+					"fieldName": "oRestAPI",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"restSource": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
+					"restOperation": "c61f85c8-f509-4f58-a637-ddc1334631de",
+					"request": [
+						{
+							"name": "searchTerm",
+							"value": "Star Wars",
+							"parent": "RequestParameter",
+							"expression": ""
+						},
+						{
+							"name": "api_key",
+							"value": "eddc86b4866161f8216deb3830f380f7",
+							"parent": "RequestParameter",
+							"expression": ""
+						}
+					],
+					"response": [
+						{
+							"status": "200",
+							"dataId": "5f222dc6-b649-4164-a11b-de3d282aef00",
+							"modelFieldNo": "b936734c-5c08-4984-bf17-9ad78c2e54df"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "d758d8ce-dff7-4590-8593-f19f05ddc30f",
+					"fieldName": "oPageVideoPlayer",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"bindingType": "u",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Detail",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "558823ef-7d66-4053-e155-0472c97168cf",
+							"fieldName": "headerPageVideoPlayer",
+							"fieldParent": "d758d8ce-dff7-4590-8593-f19f05ddc30f",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setCustomHeader",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "309886af-36f4-4bbf-9f28-484f9af6dd91",
+									"fieldName": "Middle1",
+									"fieldParent": "558823ef-7d66-4053-e155-0472c97168cf",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentMiddle",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "ac31ada6-49b6-42c6-987d-3590e9d3fa7e",
+											"fieldName": "txtHeaderVideoPlayer",
+											"fieldParent": "309886af-36f4-4bbf-9f28-484f9af6dd91",
+											"fieldType": "sap.m.Title",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "titleStyle",
+													"grouping": "Properties",
+													"value": "H3",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Youtube Player",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "b7a68ca5-044d-4bb6-f062-e0f5bd09b38b",
+							"fieldName": "VideoPlayerContainer",
+							"fieldParent": "d758d8ce-dff7-4590-8593-f19f05ddc30f",
+							"fieldType": "sap.m.FlexBox",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "width",
+									"grouping": "Properties",
+									"value": "100%",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "justifyContent",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "height",
+									"grouping": "Properties",
+									"value": "100%",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "alignItems",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "421564c8-cb12-4c9f-efd4-a43fb5f460fa",
+									"fieldName": "htmlDIVVideoPlayer",
+									"fieldParent": "b7a68ca5-044d-4bb6-f062-e0f5bd09b38b",
+									"fieldType": "sap.ui.core.HTML",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "aedc697a-d3db-485d-e0c2-efeedd1795a1",
+											"fieldName": "HTMLVideoPlayerTag",
+											"fieldParent": "421564c8-cb12-4c9f-efd4-a43fb5f460fa",
+											"fieldType": "neptune.Html",
+											"script": "<div id=\"player\" width = \"100%\" height=\"100%\"></div>",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "1af726e5-aaca-4d78-a428-d7ef6d05711f",
+							"fieldName": "footerChapter",
+							"fieldParent": "d758d8ce-dff7-4590-8593-f19f05ddc30f",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setFooter",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "49872e85-f570-4641-afbc-888bb7a00803",
+									"fieldName": "Left",
+									"fieldParent": "1af726e5-aaca-4d78-a428-d7ef6d05711f",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentLeft",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "fc6c8ea0-7c38-440d-c12f-878f63066215",
+											"fieldName": "butLoadVideo",
+											"fieldParent": "49872e85-f570-4641-afbc-888bb7a00803",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Emphasized",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "tooltip",
+													"grouping": "Properties",
+													"value": "Load Sample Video",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Load Video",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "loadVideo();",
+													"script": "loadVideo();",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "2a225694-1c3d-4cd2-b1ca-245d421d86d8",
+									"fieldName": "Middle",
+									"fieldParent": "1af726e5-aaca-4d78-a428-d7ef6d05711f",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentMiddle",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "9a2b1b84-41bd-4326-b22e-36ccc65e38f2",
+											"fieldName": "butPauseVideo",
+											"fieldParent": "2a225694-1c3d-4cd2-b1ca-245d421d86d8",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Emphasized",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "tooltip",
+													"grouping": "Properties",
+													"value": "Pause Video",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/pause",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "pauseVideo();",
+													"script": "pauseVideo();",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "ea92741c-ac6b-418e-c262-93fd02dccbeb",
+											"fieldName": "butPlayVideo",
+											"fieldParent": "2a225694-1c3d-4cd2-b1ca-245d421d86d8",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Accept",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "tooltip",
+													"grouping": "Properties",
+													"value": "Play Video",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/play",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "playVideo();",
+													"script": "playVideo();",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "5ebf67ff-941d-4719-9bb1-f068aacfdbbf",
+											"fieldName": "butStopVideo",
+											"fieldParent": "2a225694-1c3d-4cd2-b1ca-245d421d86d8",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Reject",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "tooltip",
+													"grouping": "Properties",
+													"value": "Stop Video",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/stop",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "stopVideo();",
+													"script": "stopVideo();",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "c82e9d94-903b-4b18-acd2-ce7bcd64a2bf",
+									"fieldName": "Right",
+									"fieldParent": "1af726e5-aaca-4d78-a428-d7ef6d05711f",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "e66202da-7ef0-4700-bc52-578feeb9bd74",
+					"fieldName": "VideoPlayer",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "bb4659bc-60fc-4b7f-c6d9-63ae266937e1",
+							"fieldName": "HOW_TO_USE",
+							"fieldParent": "e66202da-7ef0-4700-bc52-578feeb9bd74",
+							"fieldType": "neptune.Script",
+							"script": [
+								"==OBJECT STRING==",
+								"// ********** Disclaimer ****************",
+								"// This Building Block uses Google YouTube IFrame API",
+								"//  API Documentation: https://developers.google.com/youtube/iframe_api_reference",
+								"",
+								"",
+								"// This Building Block provides the wrapper functionalities to only Play the Videos from Google Youtube",
+								"",
+								"",
+								"// This Building Block is recommended for Desktop Browsers",
+								"//  For Mobile Apps / Clients, try using Cordova Plugin",
+								"",
+								"// ******** Components Included *************",
+								"// oPageVideoPlayer gives the complete set of components including container and HTML-DIV tag",
+								"// Video will be placed inside VideoPlayerContainer",
+								"",
+								"// All  required functions for YouTube API is provided inside script videoPlayerFunctions",
+								"",
+								"",
+								""
+							],
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "2724c32f-3dbe-4ded-ce18-05a1e9ba78ee",
+							"fieldName": "videoPlayerFunctions",
+							"fieldParent": "e66202da-7ef0-4700-bc52-578feeb9bd74",
+							"fieldType": "neptune.Script",
+							"script": [
+								"==OBJECT STRING==",
+								"var player;",
+								"",
+								"// Custom Init - Happens only once",
+								"sap.ui.getCore().attachInit(function(data) {",
+								"",
+								"    // Initialize YouTube API",
+								"    setTimeout(function() {",
+								"        //  Do something",
+								"        var tag = document.createElement('script');",
+								"",
+								"        tag.src = \"https://www.youtube.com/iframe_api\";",
+								"        var firstScriptTag = document.getElementsByTagName('script')[0];",
+								"        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);",
+								"",
+								"",
+								"        window.onYouTubeIframeAPIReady = function() {",
+								"            console.log('Youtube Loaded....');",
+								"        }",
+								"",
+								"        // Place Holder",
+								"        // imgReplaceContent.setSrc('/youTube.png');",
+								"        imgReplaceContent.placeAt('player');",
+								"",
+								"    }, 200);",
+								"",
+								"});",
+								"",
+								"// Load Video",
+								"function loadVideo() {",
+								"    // This function can be called on any event",
+								"    // Video ID from YouTube",
+								"    // E.g. Video URL - // https://www.youtube.com/watch?v=DyI1d3nvyTs",
+								"    //      Video ID = 'DyI1d3nvyTs'",
+								"    var videoID = 'DyI1d3nvyTs';",
+								"",
+								"    // Destroy existing instance of Video Player -- Required when loading mulitple Videos in same video Player",
+								"    if (player) {",
+								"        if (player.g) {",
+								"            player.destroy();",
+								"",
+								"        }",
+								"    }",
+								"",
+								"",
+								"    // Load Player with YouTube Video ID",
+								"    player = new window.YT.Player('player', {",
+								"        height: '390', // Video Player Height - can be varied",
+								"        width: '640', // Video Player Width - can be varied",
+								"        videoId: videoID, // Assign Video ID in runtime - variable",
+								"        events: {",
+								"            // Player events",
+								"            'onReady': onPlayerReady,",
+								"            'onStateChange': onPlayerStateChange",
+								"",
+								"            // More events Refer- https://developers.google.com/youtube/iframe_api_reference#Events",
+								"        }",
+								"    });",
+								"}",
+								"",
+								"",
+								"// Playback Handlers",
+								"function playVideo() {",
+								"    player.playVideo();",
+								"}",
+								"",
+								"function stopVideo() {",
+								"    player.stopVideo();",
+								"}",
+								"",
+								"function pauseVideo() {",
+								"    player.pauseVideo();",
+								"}",
+								"",
+								"function onPlayerReady(event) {",
+								"    // when Video Player is Ready, perform functions.. like AutoPlayback",
+								"    // event.target.playVideo();",
+								"}",
+								"",
+								"",
+								"function onPlayerStateChange(event) {",
+								"    // When status of Video Player Changes",
+								"    switch (event.data) {",
+								"        case YT.PlayerState.PLAYING:",
+								"            // playing",
+								"            getPlayerProgress(event.data);",
+								"            break;",
+								"        case YT.PlayerState.ENDED:",
+								"            // Video End",
+								"            getPlayerProgress(event.data);",
+								"            break;",
+								"        case YT.PlayerState.PAUSED:",
+								"            // Paused",
+								"            getPlayerProgress(event.data);",
+								"            break;",
+								"        default:",
+								"            // code",
+								"    }",
+								"",
+								"}",
+								"",
+								"",
+								"function getPlayerProgress(status) {",
+								"    // Get Timers from Video Player",
+								"    // player.getDuration() - Total Duration of Video",
+								"    // player.getCurrentTime() - Time Ellapsed in Video Player",
+								"",
+								"    var timeRemaining = player.getDuration() - player.getCurrentTime();",
+								"",
+								"    switch (status) {",
+								"        case YT.PlayerState.PLAYING:",
+								"            // playing",
+								"            console.log(\"Video Started Playing at - \" + player.getCurrentTime());",
+								"            break;",
+								"        case YT.PlayerState.ENDED:",
+								"            // Video End",
+								"            console.log(\"Video Completed Playing\");",
+								"            break;",
+								"        case YT.PlayerState.PAUSED:",
+								"            // Paused",
+								"            console.log(\"Video Paused Playing at - \" + player.getCurrentTime());",
+								"            break;",
+								"        default:",
+								"            // code",
+								"    }",
+								"}"
+							],
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "38a84c92-e1b2-4535-ae08-03c48b31cdd0",
+							"fieldName": "imgReplaceContent",
+							"fieldParent": "e66202da-7ef0-4700-bc52-578feeb9bd74",
+							"fieldType": "sap.m.Image",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "width",
+									"grouping": "Properties",
+									"value": "15em",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "src",
+									"grouping": "Properties",
+									"value": "https://planet9test.neptune-software.com:8081/media/root/BUILDINGBLOCKS/youTube.png",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "height",
+									"grouping": "Properties",
+									"value": "5em",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "24.7.1.718",
+	"application": "sdfghf",
+	"title": "App",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "1.96CDN",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"apis": [
+		{
+			"id": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
+			"name": "Movie Database",
+			"ver": "24.6.29.2245"
+		},
+		{
+			"id": "526a5da8-2bbc-4786-a367-d2867e888f6d",
+			"name": "Collection",
+			"ver": "24.6.30.120"
+		}
+	],
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

@@ -1,0 +1,28 @@
+{
+	"id": "9d02dba1-d60d-4f5a-bf29-442f24550524",
+	"createdAt": "2024-06-28T00:23:06.626Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "IdGet",
+	"ver": "24.6.28.1821",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"result.data = req.user.id\r",
+		"console.log(result.data)"
+	],
+	"useAsGlobalScript": true,
+	"isTypescript": true,
+	"transpiledContent": [
+		"==OBJECT STRING==",
+		"result.data = req.user.id;",
+		"console.log(result.data);",
+		""
+	],
+	"lastRunSuccessful": true,
+	"jsscriptGroup": "6788ec95-ac49-48bb-9ed9-d17ccb6bdfa7",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

@@ -4,7 +4,8 @@
 	"createdBy": "admin",
 	"translation": [],
 	"tilesOrder": [
-		"013879a8-b0f5-4375-b614-d7747c1b4156"
+		"013879a8-b0f5-4375-b614-d7747c1b4156",
+		"b0494b1d-4004-42b6-a913-e91ba1a930a8"
 	],
 	"tilegroupsOrder": [],
 	"configMessage": {},
@@ -27,7 +28,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.5.26.547",
+	"ver": "24.6.28.1940",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -77,6 +78,12 @@
 			"name": "My Reels",
 			"title": "My Reels",
 			"ver": "24.5.26.546"
+		},
+		{
+			"id": "b0494b1d-4004-42b6-a913-e91ba1a930a8",
+			"name": "CollectionList",
+			"title": null,
+			"ver": "24.6.28.1943"
 		}
 	]
 }
