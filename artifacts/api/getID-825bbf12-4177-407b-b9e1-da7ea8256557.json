@@ -1,0 +1,79 @@
+{
+	"id": "825bbf12-4177-407b-b9e1-da7ea8256557",
+	"createdAt": "2024-07-05T03:14:09.641Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "3ea85b8c-9704-4983-db46-42e800521e85",
+			"method": "GET",
+			"path": "/getID",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": []
+				}
+			],
+			"serverScript": "5f9db406-6be8-4ea1-92ca-acb3926e7932"
+		}
+	],
+	"definitions": [
+		{
+			"id": "7b61a944-5900-48c7-fff4-5a70a284479d",
+			"name": "userid",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "32989ba3-46d5-4272-918d-ef5eb0353185",
+					"name": "userid",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "getID",
+	"endpoint": "/api/serverscript/getid",
+	"ver": "24.7.5.352",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+	"apiFormat": 0,
+	"roles": []
+}

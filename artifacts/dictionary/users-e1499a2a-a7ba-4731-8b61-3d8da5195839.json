@@ -8,13 +8,26 @@
 			"fieldName": "username",
 			"fieldType": "text",
 			"isUnique": true
+		},
+		{
+			"id": "0006d6d4-f66c-473e-b649-41af652d46fc",
+			"fieldName": "email",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "7988a876-56c8-410e-c57f-88c7df71c3aa",
+			"fieldName": "active",
+			"fieldType": "boolean",
+			"isNullable": true
 		}
 	],
 	"indices": [],
 	"foreignKeys": [],
 	"name": "users",
 	"description": null,
-	"ver": "24.5.26.558",
+	"ver": "24.7.7.101",
 	"enableAudit": false,
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
 	"rolesRead": [

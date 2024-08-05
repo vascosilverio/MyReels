@@ -1,0 +1,215 @@
+{
+	"id": "2ffb25af-0f1a-441b-a558-ec4954473129",
+	"createdAt": "2024-08-03T18:13:58.652Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "9770562e-feed-465a-d44a-3d90659e2593",
+			"method": "GET",
+			"path": "/get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "3b7d92a5-6eb9-40c4-8f30-d5eb6ab706a0",
+							"name": "reviews",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"serverScript": "dd94b8d3-8ae0-4a41-a9a9-88079213be7b"
+		}
+	],
+	"definitions": [
+		{
+			"id": "fc2d985f-8fbf-4b6d-c6fa-f7985c77d2b8",
+			"name": "reviews",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "c6b85fea-623f-4427-e4aa-898990d345c6",
+					"name": "userId",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "0c1e4986-1f17-4470-8bb9-cb476f953382",
+					"name": "movieId",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e4fd2476-e23a-4295-90cb-43c9ca22c694",
+					"name": "rating",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "330dbebc-4d1d-445b-9730-b016267e5799",
+					"name": "review",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "42e8efac-f750-4dde-f5c7-bc726de17bf7",
+					"name": "favourite",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e92fd73f-8e0e-4364-abf5-91b37b4ac1f5",
+					"name": "wishlist",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "wishlist",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "0aa31f55-42f5-448b-89c0-b8e22f0bc0cd",
+					"name": "private",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "private",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "923ec2bf-ebc8-4f27-87f5-033cb2eb6671",
+					"name": "title",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "title",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "c4d738ec-7d15-4849-b4e5-271edc5e38e1",
+					"name": "release_date",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "release_date",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a977af03-e259-4213-d23c-9efe2c0ce804",
+					"name": "genre",
+					"parent": "",
+					"description": "",
+					"objectType": "object",
+					"objectName": "genre",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "33902e2b-570e-436c-cdff-90a1b3889640",
+					"name": "review_check",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "getPublicReviews",
+	"endpoint": "/api/serverscript/getpublicreviews",
+	"ver": "24.8.3.1829",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+	"apiFormat": 0,
+	"roles": []
+}

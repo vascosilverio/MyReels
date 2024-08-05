@@ -1,0 +1,9 @@
+{
+	"id": "51653e2d-5205-489e-9d6c-de2862caeacb",
+	"createdAt": "2024-08-03T17:43:39.430Z",
+	"createdBy": "admin",
+	"name": "getPublicReviews",
+	"description": "get public reviews for the feed",
+	"ver": "24.8.3.1743",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

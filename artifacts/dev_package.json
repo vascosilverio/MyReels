@@ -36,9 +36,15 @@
 	},
 	"name": "MyReels",
 	"description": "Movie Collection App made in Neptune DXP Open Edition",
-	"ver": "24.7.1.622",
+	"ver": "24.8.5.1649",
 	"enableCICD": true,
 	"apps": [
+		{
+			"id": "d236b2cb-3dfc-4d72-a95c-d0cfe08ad09e",
+			"application": "applicationv2",
+			"title": "MyReelsApplication",
+			"description": ""
+		},
 		{
 			"id": "be997170-7abb-44da-aa32-1251ae59feab",
 			"application": "asd",
@@ -66,7 +72,7 @@
 		{
 			"id": "d980f349-9e7e-4d98-adfe-63f419be2b9b",
 			"application": "sdfghf",
-			"title": "App",
+			"title": "MyReelsApplication",
 			"description": ""
 		}
 	],
@@ -78,14 +84,80 @@
 			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		},
 		{
+			"id": "328def27-233f-4946-9ea0-4bf7b1cc4e0a",
+			"name": "addReview",
+			"description": "adds review with user id on session",
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "2ffb25af-0f1a-441b-a558-ec4954473129",
+			"name": "getPublicReviews",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "b0bab1a9-8c71-4ff8-9270-2ea49b364d85",
+			"name": "MovieSearchArray",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "4cfe4325-3b95-4012-8896-df26f144fc84",
+			"name": "videoGET",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "be2c5fd8-53bc-4307-8b7e-94c5d59ee076",
+			"name": "collectionsTable",
+			"description": "",
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "e385f60b-a1f3-4a68-b552-e22865696094",
+			"name": "leaderboardGET",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "c95a57ee-992d-4fc2-a98b-bea028ecf053",
+			"name": "PopularMovies",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "825bbf12-4177-407b-b9e1-da7ea8256557",
+			"name": "getID",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
 			"id": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
 			"name": "Movie Database",
 			"description": "The Movie Database API",
 			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		},
 		{
-			"id": "b0bab1a9-8c71-4ff8-9270-2ea49b364d85",
-			"name": "MovieSearchArray",
+			"id": "39a966be-d954-49f0-b127-467fda899830",
+			"name": "delReview",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "e4f91ee4-6b23-4da1-952c-f013527fc9de",
+			"name": "editReview",
+			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "fc2a2b02-6543-40d0-9690-855d2ec32080",
+			"name": "getReviews",
+			"description": "get reviews related to user",
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "ed3659f0-167d-4adf-a693-14daa983bc76",
+			"name": "getReviewId",
 			"description": null,
 			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		}
@@ -94,17 +166,27 @@
 	"odataMock": [],
 	"dictionary": [
 		{
+			"id": "7850ec31-7369-4a8b-a109-2b0d773cc88f",
+			"name": "collections",
+			"description": "Movie Collection"
+		},
+		{
 			"id": "e1499a2a-a7ba-4731-8b61-3d8da5195839",
 			"name": "users",
 			"description": null
 		},
 		{
-			"id": "7850ec31-7369-4a8b-a109-2b0d773cc88f",
-			"name": "collections",
-			"description": "Movie Collection"
+			"id": "4fbcfae8-11d4-4bc9-aad8-a0806251e3d8",
+			"name": "genres",
+			"description": "List of genres of Movies "
 		}
 	],
 	"jsclass": [
+		{
+			"id": "19e1c5cc-edbe-4c7e-8b96-c614f381a17d",
+			"name": "leaderboardGET",
+			"description": null
+		},
 		{
 			"id": "9d02dba1-d60d-4f5a-bf29-442f24550524",
 			"name": "IdGet",
@@ -113,6 +195,41 @@
 		{
 			"id": "e6d1ae28-d7a4-48a3-a498-9237743c88d6",
 			"name": "GetGlobal",
+			"description": null
+		},
+		{
+			"id": "5f9db406-6be8-4ea1-92ca-acb3926e7932",
+			"name": "getIDapi",
+			"description": null
+		},
+		{
+			"id": "c5f85a10-d7d2-421e-b0df-381ba391ea36",
+			"name": "addReview",
+			"description": null
+		},
+		{
+			"id": "dd94b8d3-8ae0-4a41-a9a9-88079213be7b",
+			"name": "getPublicReviews",
+			"description": null
+		},
+		{
+			"id": "3602719a-8709-4f96-9eb8-c450f7b00748",
+			"name": "deleteReview",
+			"description": null
+		},
+		{
+			"id": "c7ab20b5-945d-494e-b2b0-0552c3de9760",
+			"name": "getReviews",
+			"description": null
+		},
+		{
+			"id": "99864b9f-20f2-4f21-8850-7955e4df8703",
+			"name": "getReviewId",
+			"description": null
+		},
+		{
+			"id": "2798defb-7c44-41ab-a1b2-60a3132a4de7",
+			"name": "editReview",
 			"description": null
 		}
 	],
@@ -126,9 +243,50 @@
 			"id": "507706c8-17c4-4b84-bdc5-26c969d2e8ba",
 			"name": "MovieSearchGetArray",
 			"description": "Array from movie search"
+		},
+		{
+			"id": "306f1e58-2752-449f-84e7-6854d59f2ce9",
+			"name": "leaderboard",
+			"description": null
+		},
+		{
+			"id": "040eb8d1-ffea-4ed8-b440-0c79f21beb3b",
+			"name": "addReview",
+			"description": null
+		},
+		{
+			"id": "e622eec3-a958-4eed-8b27-4c853af7aaee",
+			"name": "getReviews",
+			"description": null
+		},
+		{
+			"id": "51653e2d-5205-489e-9d6c-de2862caeacb",
+			"name": "getPublicReviews",
+			"description": "get public reviews for the feed"
+		},
+		{
+			"id": "7d2e4f64-a053-473f-8fd0-82d6fd4bfbd4",
+			"name": "deleteReview",
+			"description": null
+		},
+		{
+			"id": "3106b9c5-da21-4a43-b0b7-ff0c70daf0cb",
+			"name": "editReview",
+			"description": null
+		},
+		{
+			"id": "27086dd0-9278-4f29-8d0e-15aee917d8c2",
+			"name": "getReviewId",
+			"description": null
 		}
 	],
-	"theme": [],
+	"theme": [
+		{
+			"id": "7d563bbb-666f-4a9a-a16f-d4140c38eb33",
+			"name": "MyReels",
+			"description": null
+		}
+	],
 	"pdf": [],
 	"rulesengine": [],
 	"reports": [
@@ -209,18 +367,23 @@
 			"id": "acfed9f5-f622-4de7-9094-e5b8772caa0b",
 			"description": null,
 			"name": "UserList"
+		},
+		{
+			"id": "581f2811-3104-4b61-81ea-3bccb9128044",
+			"description": null,
+			"name": "MyReelsApp"
 		}
 	],
 	"category": [
 		{
-			"id": "34ee7866-b004-4c2c-8493-a2499f52b59d",
-			"description": null,
-			"name": "Welcome to My Reels"
-		},
-		{
 			"id": "00bd0013-2402-4cae-be5e-f206ec660bdb",
 			"description": null,
 			"name": "Administrative"
+		},
+		{
+			"id": "34ee7866-b004-4c2c-8493-a2499f52b59d",
+			"description": null,
+			"name": "Welcome to My Reels"
 		}
 	],
 	"launchpad": [
@@ -245,7 +408,13 @@
 	],
 	"systems": [],
 	"doc": [],
-	"wf_notifications": [],
+	"wf_notifications": [
+		{
+			"id": "cd30a054-8b08-41b0-a682-fa62b8d7b7bf",
+			"name": "Registration Confirmation",
+			"description": "Confirm your Registration to My Reels"
+		}
+	],
 	"department": [
 		{
 			"id": "6a4e04fc-f5c4-4956-90f3-37e511483ba4",

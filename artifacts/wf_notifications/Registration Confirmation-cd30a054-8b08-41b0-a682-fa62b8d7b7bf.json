@@ -1,0 +1,12 @@
+{
+	"id": "cd30a054-8b08-41b0-a682-fa62b8d7b7bf",
+	"createdAt": "2024-08-05T06:33:16.762Z",
+	"createdBy": "admin",
+	"translation": null,
+	"name": "Registration Confirmation",
+	"description": "Confirm your Registration to My Reels",
+	"content": "<p><br></p>",
+	"ver": "24.8.5.633",
+	"type": "template",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

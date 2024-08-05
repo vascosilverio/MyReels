@@ -1,0 +1,19 @@
+{
+	"id": "5f9db406-6be8-4ea1-92ca-acb3926e7932",
+	"createdAt": "2024-07-05T03:15:34.762Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "getIDapi",
+	"ver": "24.7.5.351",
+	"description": null,
+	"content": "result.userid = req.user.id;",
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "6788ec95-ac49-48bb-9ed9-d17ccb6bdfa7",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

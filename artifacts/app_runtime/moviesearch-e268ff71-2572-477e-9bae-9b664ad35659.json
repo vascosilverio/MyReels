@@ -671,7 +671,7 @@
 	"enableStylesheet": false,
 	"enableObfuscate": true,
 	"onlyRunLaunchpad": false,
-	"disabled": false,
+	"disabled": true,
 	"loadLaunchpadCode": null,
 	"loadApplicationCode": null,
 	"appType": "",

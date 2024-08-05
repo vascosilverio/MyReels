@@ -1,0 +1,66 @@
+{
+	"id": "19e1c5cc-edbe-4c7e-8b96-c614f381a17d",
+	"createdAt": "2024-07-07T03:57:18.891Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7850ec31-7369-4a8b-a109-2b0d773cc88f",
+			"name": "collections",
+			"contextname": "collections"
+		},
+		{
+			"id": "e1499a2a-a7ba-4731-8b61-3d8da5195839",
+			"name": "users",
+			"contextname": "users"
+		},
+		{
+			"id": "4fbcfae8-11d4-4bc9-aad8-a0806251e3d8",
+			"name": "genres",
+			"contextname": "genres"
+		}
+	],
+	"apis": [
+		{
+			"id": "fba48f08-e0d3-4e6e-fe4e-ac766ca16fc0",
+			"parent": "526a5da8-2bbc-4786-a367-d2867e888f6d",
+			"name": "/collections",
+			"contextname": "collections",
+			"method": "GET"
+		}
+	],
+	"name": "leaderboardGET",
+	"ver": "24.8.2.1745",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"const data = req.body;\r",
+		"\r",
+		"const leaderboard = await entities.collections.createQueryBuilder(\"leaderboard\")\r",
+		"  .select(\"leaderboard.userId\", \"userId\") \r",
+		"  .addSelect(\"COUNT(DISTINCT leaderboard.review)\", \"reviewcount\")\r",
+		"  .groupBy(\"leaderboard.userId\")\r",
+		"  .orderBy(\"reviewcount\", \"DESC\")\r",
+		"  .getRawMany()\r",
+		"\r",
+		"const formattedLeaderboard = leaderboard.map((entry, index) => ({\r",
+		"  rank: index + 1,\r",
+		"  username: entry.userId,\r",
+		"  reviewcount: parseInt(entry.reviewcount)\r",
+		"}));\r",
+		"\r",
+		"// Store the leaderboard directly as an object\r",
+		"result.data = { leaderboard: formattedLeaderboard };\r",
+		"\r",
+		"console.log(JSON.stringify(result));\r",
+		"\r",
+		""
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "306f1e58-2752-449f-84e7-6854d59f2ce9",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

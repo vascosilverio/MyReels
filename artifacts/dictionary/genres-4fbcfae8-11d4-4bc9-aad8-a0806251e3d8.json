@@ -1,0 +1,15 @@
+{
+	"id": "4fbcfae8-11d4-4bc9-aad8-a0806251e3d8",
+	"createdAt": "2024-07-03T02:07:10.483Z",
+	"createdBy": "admin",
+	"fields": [],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "genres",
+	"description": "List of genres of Movies ",
+	"ver": "24.7.3.37",
+	"enableAudit": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"rolesRead": [],
+	"rolesWrite": []
+}

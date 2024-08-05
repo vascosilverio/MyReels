@@ -1,0 +1,384 @@
+{
+	"id": "be2c5fd8-53bc-4307-8b7e-94c5d59ee076",
+	"createdAt": "2024-07-08T00:45:28.879Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "3326cabc-1bda-4596-e57e-de3430f1dd76",
+			"path": "/collections",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1,fieldName2,fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "f7d5c650-44c3-4a62-d979-58982a444d1d",
+			"path": "/collections",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "collections"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "4902a562-d19a-4e1c-8bfa-d4f0f3219728",
+			"path": "/collections",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "collections"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "68ba5be7-ed23-4f84-b776-2cd7cab7db1e",
+			"path": "/collections",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "collections"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2a1dd510-36a6-434d-d1b9-dbb032952bce",
+			"path": "/collections/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan, LessThanOrEqual, MoreThan, MoreThanOrEqual, Like, Any, IsNull, Raw"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "c94bbe3c-7562-4e4c-e42e-12b49fd8b9d7",
+			"name": "collections",
+			"properties": [
+				{
+					"id": "98706674-e471-48ed-99a3-cf4257c0abf1",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "edda193d-69b9-4ea3-8be0-bf60043f1111",
+					"parent": "",
+					"name": "username",
+					"objectType": "uuid"
+				},
+				{
+					"id": "dd15e60a-ced2-40c0-d9af-bff1f65a4854",
+					"parent": "",
+					"name": "movieId",
+					"objectType": "string"
+				},
+				{
+					"id": "925e781e-5e47-4b65-fe03-6c42e2309791",
+					"parent": "",
+					"name": "rating",
+					"objectType": "integer"
+				},
+				{
+					"id": "e906db33-4c03-4e22-cfc8-26237ba27dfe",
+					"parent": "",
+					"name": "review",
+					"objectType": "string"
+				},
+				{
+					"id": "4f5db10d-0cdf-41cd-aadc-d48ab9917e85",
+					"parent": "",
+					"name": "favourite",
+					"objectType": "boolean"
+				},
+				{
+					"id": "fa145357-9fab-4733-c5cc-ac19b019cf2b",
+					"parent": "",
+					"name": "wishlist",
+					"objectType": "boolean"
+				},
+				{
+					"id": "daddc145-1677-41fa-b98e-b84bd0671c66",
+					"parent": "",
+					"name": "private",
+					"objectType": "boolean"
+				},
+				{
+					"id": "61edc14c-c89b-44da-df10-66e23af8565c",
+					"parent": "",
+					"name": "title",
+					"objectType": "string"
+				},
+				{
+					"id": "a10c5f05-5951-4f6c-acd6-5a9a3ae0860f",
+					"parent": "",
+					"name": "release_date",
+					"objectType": "string"
+				},
+				{
+					"id": "eedc7331-c9c7-4511-b072-15fe9a5e261e",
+					"parent": "",
+					"name": "genre",
+					"objectType": "object"
+				},
+				{
+					"id": "eb4f0062-055e-49b0-d60c-97840316516c",
+					"parent": "",
+					"name": "review_check",
+					"objectType": "boolean"
+				},
+				{
+					"id": "0b7a7a6f-3435-4809-d713-a92aad2a7cf0",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "66042598-c6fa-4392-df5e-9f4b8b764f7e",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "b5902439-7444-47aa-d84b-1ffd95cbd1e8",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "d650babe-ca38-4590-894f-83bd4c1234a7",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "aa9743e7-3a23-4cb2-fc50-5099debf3f18",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "dd95e05f-3508-4fd8-b9c1-d176fc9c04f9",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "ab912b61-ba79-43c9-af62-2ae92a937f46",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "fe04bb64-403c-466d-b4ae-f4c5000d44d4",
+			"name": "count",
+			"properties": [
+				{
+					"id": "9f7c4fae-8338-47c4-b1f3-7cfcbe580bb9",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "collectionsTable",
+	"endpoint": "/api/entity",
+	"ver": "24.7.8.045",
+	"version": "",
+	"description": "",
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+	"apiFormat": 0,
+	"roles": []
+}

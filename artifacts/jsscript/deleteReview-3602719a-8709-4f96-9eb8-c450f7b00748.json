@@ -1,0 +1,52 @@
+{
+	"id": "3602719a-8709-4f96-9eb8-c450f7b00748",
+	"createdAt": "2024-08-03T18:42:18.974Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7850ec31-7369-4a8b-a109-2b0d773cc88f",
+			"name": "collections",
+			"contextname": "collections"
+		}
+	],
+	"apis": [],
+	"name": "deleteReview",
+	"ver": "24.8.3.2248",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"const data = req.body;\r",
+		"log.error(data);\r",
+		"// Verificar se req.user existe\r",
+		"if (!req.user) {\r",
+		"    log.error(\"User not authenticated\");\r",
+		"    return fail(\"User not authenticated\");\r",
+		"}\r",
+		"\r",
+		"const user = req.user.id;\r",
+		"const movieIdDEL = data.movieId;\r",
+		"\r",
+		"try {\r",
+		"\r",
+		"await entities.collections.delete({\r",
+		"    movieId: movieIdDEL,\r",
+		"    userId: user\r",
+		"});\r",
+		"\r",
+		"    return { success: true, data: result };\r",
+		"    } catch (error) {\r",
+		"    log.error(\"Error deleting review:\", error);\r",
+		"    console.log(\"Error details:\", error.message, error.parameters);\r",
+		"    return { success: false, message: error.message || \"An error occurred while deleting the review\" };\r",
+		"}\r",
+		""
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "7d2e4f64-a053-473f-8fd0-82d6fd4bfbd4",
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8"
+}

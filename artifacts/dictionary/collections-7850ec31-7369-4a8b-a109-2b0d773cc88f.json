@@ -7,13 +7,15 @@
 			"id": "0adf9314-924d-4c73-8dda-4fdeab3b1b83",
 			"fieldName": "userId",
 			"fieldType": "uuid",
-			"isUnique": true
+			"isUnique": false,
+			"isNullable": true
 		},
 		{
 			"id": "a2834346-01db-4847-810d-a486e458ae2d",
 			"fieldName": "movieId",
 			"fieldType": "text",
-			"isUnique": false
+			"isUnique": false,
+			"isNullable": true
 		},
 		{
 			"id": "7c2f28ca-e3f1-4e11-9809-cc04c064249d",
@@ -32,13 +34,49 @@
 			"fieldName": "favourite",
 			"fieldType": "boolean",
 			"isNullable": true
+		},
+		{
+			"id": "ccc5026d-d76e-4827-87c6-72970b353049",
+			"fieldName": "wishlist",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "0f63e4b6-0806-43b9-c930-85073b1df4b6",
+			"fieldName": "private",
+			"fieldType": "boolean",
+			"isNullable": true
+		},
+		{
+			"id": "08133753-8c06-407b-825f-5ad91333fd54",
+			"fieldName": "title",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "c5ebb40f-8f35-47b9-9170-4cc608df5707",
+			"fieldName": "release_date",
+			"fieldType": "timestamptz",
+			"isNullable": true
+		},
+		{
+			"id": "9f264f5e-498b-44c7-a79f-73f8463d8231",
+			"fieldName": "genre",
+			"fieldType": "json",
+			"isNullable": true
+		},
+		{
+			"id": "b72f81f0-d20b-4f0e-ceff-2033912861c0",
+			"fieldName": "review_check",
+			"fieldType": "boolean",
+			"isNullable": true
 		}
 	],
 	"indices": [],
 	"foreignKeys": [],
 	"name": "collections",
 	"description": "Movie Collection",
-	"ver": "24.6.28.205",
+	"ver": "24.7.8.24",
 	"enableAudit": false,
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
 	"rolesRead": [

@@ -1,0 +1,160 @@
+{
+	"id": "e385f60b-a1f3-4a68-b552-e22865696094",
+	"createdAt": "2024-07-07T08:06:16.432Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "743d7dc4-a164-41c7-9bd7-50cf7c65fe01",
+			"method": "GET",
+			"path": "/leaderboard",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "0bacf7e2-bda4-4e26-aec5-e73216fc4510",
+							"name": "board",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"serverScript": "19e1c5cc-edbe-4c7e-8b96-c614f381a17d"
+		}
+	],
+	"definitions": [
+		{
+			"id": "411f4b5f-2742-4888-c1c4-1ff7c1e2d36b",
+			"name": "board",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "a59aa094-678b-4b19-a311-755ea8645201",
+					"name": "rank",
+					"parent": "b80e8587-95df-4d27-b6a0-e507441ba95b",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "cce95c21-2881-4916-ef8a-92581943e60f",
+					"name": "username",
+					"parent": "b80e8587-95df-4d27-b6a0-e507441ba95b",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "73b4a82a-2bc2-4d33-fde5-bfc42e69cad9",
+					"name": "reviewcount",
+					"parent": "b80e8587-95df-4d27-b6a0-e507441ba95b",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b80e8587-95df-4d27-b6a0-e507441ba95b",
+					"name": "leaderboard",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "leaderboard",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": [
+						{
+							"id": "a59aa094-678b-4b19-a311-755ea8645201",
+							"name": "rank",
+							"parent": "b80e8587-95df-4d27-b6a0-e507441ba95b",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "cce95c21-2881-4916-ef8a-92581943e60f",
+							"name": "username",
+							"parent": "b80e8587-95df-4d27-b6a0-e507441ba95b",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "73b4a82a-2bc2-4d33-fde5-bfc42e69cad9",
+							"name": "reviewcount",
+							"parent": "b80e8587-95df-4d27-b6a0-e507441ba95b",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "leaderboardGET",
+	"endpoint": "/api/serverscript/leaderboardget",
+	"ver": "24.7.7.951",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+	"apiFormat": 0,
+	"roles": []
+}

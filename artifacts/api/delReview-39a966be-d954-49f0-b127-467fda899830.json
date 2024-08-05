@@ -1,0 +1,84 @@
+{
+	"id": "39a966be-d954-49f0-b127-467fda899830",
+	"createdAt": "2024-08-03T22:49:22.697Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "827770da-d53e-4e22-e42a-1e70e6b4c202",
+			"method": "DELETE",
+			"path": "/del",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": []
+				}
+			],
+			"serverScript": "3602719a-8709-4f96-9eb8-c450f7b00748",
+			"content": [
+				{
+					"name": "movieId",
+					"objectType": "string"
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "b998d807-a281-46dd-c7d9-4afef6317db3",
+			"name": "movieId",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "f897e056-57ff-4b28-862a-4fcfc2ecdf2b",
+					"name": "movieId",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "delReview",
+	"endpoint": "/api/serverscript/delreview",
+	"ver": "24.8.3.2252",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
+	"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f",
+	"apiFormat": 0,
+	"roles": []
+}
