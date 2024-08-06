@@ -1,6 +1,6 @@
 {
-	"id": "9ae32636-7137-4c7f-bae4-69c390d2456c",
-	"createdAt": "2024-05-25T06:11:08.945Z",
+	"id": "3d1bbd58-41c8-4290-a4fc-b33e1cb05c7b",
+	"createdAt": "2024-08-06T08:31:33.264Z",
 	"createdBy": "admin",
 	"extUserRoles": [
 		{
@@ -39,7 +39,7 @@
 		]
 	},
 	"enhancement": [],
-	"name": "MyReels",
+	"name": "MyReels - Copy",
 	"title": "My Reels",
 	"description": "Personal Movie Collection Page",
 	"startApp": null,
@@ -68,7 +68,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "24.8.6.831",
+	"ver": "24.8.6.833",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,

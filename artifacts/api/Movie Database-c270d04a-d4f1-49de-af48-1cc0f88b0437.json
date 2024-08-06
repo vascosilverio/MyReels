@@ -17,7 +17,7 @@
 					"required": true,
 					"inPath": true,
 					"value": "",
-					"default": "Null",
+					"default": "",
 					"example": ""
 				},
 				{
@@ -35,7 +35,7 @@
 					"required": true,
 					"inPath": true,
 					"value": "",
-					"default": "1",
+					"default": "",
 					"example": ""
 				}
 			],
@@ -59,6 +59,48 @@
 			"summary": "search",
 			"enableCredentials": false,
 			"auth": []
+		},
+		{
+			"id": "149030da-032e-4258-f86b-970445c773db",
+			"method": "GET",
+			"path": "/movie/(id)/videos?language=en-US&api_key=(api_key)",
+			"description": "",
+			"parameters": [
+				{
+					"name": "id",
+					"description": "",
+					"required": true,
+					"inPath": true,
+					"value": "",
+					"default": "",
+					"example": ""
+				},
+				{
+					"name": "api_key",
+					"description": "",
+					"required": true,
+					"inPath": true,
+					"value": "",
+					"default": "eddc86b4866161f8216deb3830f380f7",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "2c86d092-cd53-4fef-f12d-1a96af16919e",
+							"name": "videos",
+							"objectType": "array"
+						}
+					]
+				}
+			]
 		}
 	],
 	"definitions": [
@@ -748,12 +790,308 @@
 					"children": []
 				}
 			]
+		},
+		{
+			"id": "a3ec0cfa-500b-4f97-954b-5c2a67623f9c",
+			"name": "videos",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "e4ec9f3c-0ec3-415f-f23e-b181e6b465aa",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "84c5e817-bccd-42d9-f000-b456f1041f28",
+					"name": "iso_639_1",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "20caa2d3-fc97-497d-c481-941fca7540a4",
+					"name": "iso_3166_1",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "c0cda3c0-f1b5-4692-98a1-d92bd3f93d97",
+					"name": "name",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "1761225c-eaeb-4958-b1d5-0890aa023540",
+					"name": "key",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "237e414b-770e-49ae-bc97-879ff3a73ba7",
+					"name": "published_at",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e7c85a6d-4075-4e74-8e35-b41ecf47f1b4",
+					"name": "site",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "bca0955d-abaf-49ff-d817-d1b78d44c13a",
+					"name": "size",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b3ce6688-a116-4628-9ecb-43dc588dd5b7",
+					"name": "type",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "c8978098-fb67-4683-97dc-7966dc39f7a3",
+					"name": "official",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e60c50d1-80ee-40e9-b499-47da4eedc6c4",
+					"name": "id",
+					"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e550d794-ad0c-4088-97d8-b1647539ff70",
+					"name": "results",
+					"parent": "",
+					"description": "",
+					"objectType": "array",
+					"objectName": "results",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"showNameField": true,
+					"children": [
+						{
+							"id": "84c5e817-bccd-42d9-f000-b456f1041f28",
+							"name": "iso_639_1",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "20caa2d3-fc97-497d-c481-941fca7540a4",
+							"name": "iso_3166_1",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "c0cda3c0-f1b5-4692-98a1-d92bd3f93d97",
+							"name": "name",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "1761225c-eaeb-4958-b1d5-0890aa023540",
+							"name": "key",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "237e414b-770e-49ae-bc97-879ff3a73ba7",
+							"name": "published_at",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "e7c85a6d-4075-4e74-8e35-b41ecf47f1b4",
+							"name": "site",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "bca0955d-abaf-49ff-d817-d1b78d44c13a",
+							"name": "size",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "b3ce6688-a116-4628-9ecb-43dc588dd5b7",
+							"name": "type",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "c8978098-fb67-4683-97dc-7966dc39f7a3",
+							"name": "official",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						},
+						{
+							"id": "e60c50d1-80ee-40e9-b499-47da4eedc6c4",
+							"name": "id",
+							"parent": "e550d794-ad0c-4088-97d8-b1647539ff70",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"children": []
+						}
+					]
+				}
+			]
 		}
 	],
 	"documentation": [],
 	"name": "Movie Database",
 	"endpoint": "https://api.themoviedb.org/3",
-	"ver": "24.8.5.1648",
+	"ver": "24.8.6.750",
 	"version": null,
 	"description": "The Movie Database API",
 	"mediaType": "",

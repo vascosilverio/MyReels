@@ -4,8 +4,6 @@
 	"createdBy": "admin",
 	"translation": [],
 	"tilesOrder": [
-		"013879a8-b0f5-4375-b614-d7747c1b4156",
-		"b0494b1d-4004-42b6-a913-e91ba1a930a8",
 		"581f2811-3104-4b61-81ea-3bccb9128044"
 	],
 	"tilegroupsOrder": [],
@@ -29,7 +27,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.8.5.641",
+	"ver": "24.8.6.827",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -75,22 +73,10 @@
 	],
 	"tiles": [
 		{
-			"id": "013879a8-b0f5-4375-b614-d7747c1b4156",
-			"name": "My Reels",
-			"title": "My Reels",
-			"ver": "24.5.26.546"
-		},
-		{
-			"id": "b0494b1d-4004-42b6-a913-e91ba1a930a8",
-			"name": "CollectionList",
-			"title": null,
-			"ver": "24.6.28.1943"
-		},
-		{
 			"id": "581f2811-3104-4b61-81ea-3bccb9128044",
 			"name": "MyReelsApp",
 			"title": null,
-			"ver": "24.8.5.640"
+			"ver": "24.8.6.827"
 		}
 	]
 }

@@ -4,16 +4,20 @@
 	"createdBy": "admin",
 	"translation": [],
 	"storeItem": {},
-	"settings": null,
+	"settings": {
+		"adaptive": {
+			"id": "7042c56d-ff06-4636-8495-01638919c7af"
+		}
+	},
 	"title": "My Reels Admin",
 	"subTitle": "Manage users and information on the app.",
 	"description": "Administrate users and information.",
 	"categoryID": null,
 	"sort": null,
 	"urlApplication": null,
-	"actionApplication": null,
+	"actionApplication": "",
 	"actionParameters": null,
-	"actionURL": null,
+	"actionURL": "",
 	"openDialog": false,
 	"openWindow": false,
 	"openFullscreen": false,
@@ -56,8 +60,8 @@
 	"helpText": "<p><br></p>",
 	"helpEnabled": false,
 	"openClickTile": true,
-	"ver": "24.5.26.546",
-	"actionWebApp": null,
+	"ver": "24.8.6.833",
+	"actionWebApp": "",
 	"name": "My Reels Admin",
 	"cardWidth": null,
 	"cardHeight": null,
@@ -74,7 +78,7 @@
 	"bodyHeight": null,
 	"roleTag": "admin",
 	"sapICFNode": null,
-	"actionType": "A",
+	"actionType": "F",
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
 	"roles": [
 		{

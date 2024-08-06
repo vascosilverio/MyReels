@@ -132,12 +132,6 @@
 			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		},
 		{
-			"id": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
-			"name": "Movie Database",
-			"description": "The Movie Database API",
-			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
-		},
-		{
 			"id": "39a966be-d954-49f0-b127-467fda899830",
 			"name": "delReview",
 			"description": null,
@@ -159,6 +153,12 @@
 			"id": "ed3659f0-167d-4adf-a693-14daa983bc76",
 			"name": "getReviewId",
 			"description": null,
+			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
+		},
+		{
+			"id": "c270d04a-d4f1-49de-af48-1cc0f88b0437",
+			"name": "Movie Database",
+			"description": "The Movie Database API",
 			"apiGroup": "c75fec18-590a-410a-a0ac-d55d566a5d9f"
 		}
 	],
@@ -354,11 +354,6 @@
 			"name": "My Reels"
 		},
 		{
-			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
-			"description": "Administrate users and information.",
-			"name": "My Reels Admin"
-		},
-		{
 			"id": "b0494b1d-4004-42b6-a913-e91ba1a930a8",
 			"description": null,
 			"name": "CollectionList"
@@ -372,6 +367,11 @@
 			"id": "581f2811-3104-4b61-81ea-3bccb9128044",
 			"description": null,
 			"name": "MyReelsApp"
+		},
+		{
+			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
+			"description": "Administrate users and information.",
+			"name": "My Reels Admin"
 		}
 	],
 	"category": [
@@ -390,6 +390,11 @@
 		{
 			"id": "9ae32636-7137-4c7f-bae4-69c390d2456c",
 			"name": "MyReels",
+			"description": "Personal Movie Collection Page"
+		},
+		{
+			"id": "3d1bbd58-41c8-4290-a4fc-b33e1cb05c7b",
+			"name": "MyReels - Copy",
 			"description": "Personal Movie Collection Page"
 		}
 	],
