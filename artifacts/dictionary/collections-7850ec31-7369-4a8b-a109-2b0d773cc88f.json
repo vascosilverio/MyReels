@@ -70,13 +70,19 @@
 			"fieldName": "review_check",
 			"fieldType": "boolean",
 			"isNullable": true
+		},
+		{
+			"id": "575e8c68-9731-436c-90bd-2a2f5e94d264",
+			"fieldName": "movieTitle",
+			"fieldType": "text",
+			"isNullable": true
 		}
 	],
 	"indices": [],
 	"foreignKeys": [],
 	"name": "collections",
 	"description": "Movie Collection",
-	"ver": "24.7.8.24",
+	"ver": "24.8.8.524",
 	"enableAudit": false,
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
 	"rolesRead": [

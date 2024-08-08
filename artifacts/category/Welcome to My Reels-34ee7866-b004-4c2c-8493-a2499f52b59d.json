@@ -27,7 +27,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.8.6.827",
+	"ver": "24.8.8.351",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -43,7 +43,7 @@
 	"imageHeight": null,
 	"name": "Welcome to My Reels",
 	"cardContentWidth": null,
-	"cardContentAlign": null,
+	"cardContentAlign": "Center",
 	"cardPerRow": null,
 	"cardStyle": null,
 	"cardHeightFit": false,
@@ -75,8 +75,8 @@
 		{
 			"id": "581f2811-3104-4b61-81ea-3bccb9128044",
 			"name": "MyReelsApp",
-			"title": null,
-			"ver": "24.8.6.827"
+			"title": "MyReels App",
+			"ver": "24.8.8.351"
 		}
 	]
 }

@@ -13,7 +13,7 @@
 	],
 	"apis": [],
 	"name": "getReviews",
-	"ver": "24.8.5.521",
+	"ver": "24.8.8.426",
 	"description": null,
 	"content": [
 		"==OBJECT STRING==",
@@ -39,7 +39,8 @@
 		"            \"title\",\r",
 		"            \"release_date\",\r",
 		"            \"genre\",\r",
-		"            \"review_check\"], where: { userId: user, }, take: 100, cache: false,\r",
+		"            \"review_check\",\r",
+		"            \"movieTitle\"], where: { userId: user, }, take: 100, cache: false,\r",
 		"    }); console.log(\"Query response:\", querry);\r",
 		"\r",
 		"    const jsonResponse = querry.map(item => ({ ...item, release_date: item.release_date ? item.release_date.toISOString() : null, genre: item.genre ? JSON.parse(item.genre) : null })); result.data = jsonResponse; console.log(\"Returning JSON:\", JSON.stringify(result));\r",

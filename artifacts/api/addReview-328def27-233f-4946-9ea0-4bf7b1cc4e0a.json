@@ -143,6 +143,25 @@
 					"children": []
 				},
 				{
+					"id": "dad87569-d6da-4647-cf34-d0be1429f019",
+					"name": "movieTitle",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"parent": "2124ff66-87dc-4d8c-90d3-3432c5be7ab3",
+					"children": []
+				},
+				{
 					"id": "2124ff66-87dc-4d8c-90d3-3432c5be7ab3",
 					"name": "data",
 					"parent": "",
@@ -258,6 +277,25 @@
 							"enabled": true,
 							"showNameField": true,
 							"children": []
+						},
+						{
+							"id": "dad87569-d6da-4647-cf34-d0be1429f019",
+							"name": "movieTitle",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"showNameField": true,
+							"parent": "2124ff66-87dc-4d8c-90d3-3432c5be7ab3",
+							"children": []
 						}
 					]
 				}
@@ -267,7 +305,7 @@
 	"documentation": [],
 	"name": "addReview",
 	"endpoint": "/api/serverscript/addreview",
-	"ver": "24.8.2.2315",
+	"ver": "24.8.8.429",
 	"version": null,
 	"description": "adds review with user id on session",
 	"mediaType": null,

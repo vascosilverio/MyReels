@@ -4,7 +4,7 @@
 	"createdBy": "admin",
 	"translation": [],
 	"tilesOrder": [
-		"32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
+		"b0494b1d-4004-42b6-a913-e91ba1a930a8",
 		"acfed9f5-f622-4de7-9094-e5b8772caa0b"
 	],
 	"tilegroupsOrder": [],
@@ -28,7 +28,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.6.28.202",
+	"ver": "24.8.8.346",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -43,8 +43,8 @@
 	"imageTabletHeight": null,
 	"imageHeight": null,
 	"name": "Administrative",
-	"cardContentWidth": null,
-	"cardContentAlign": null,
+	"cardContentWidth": "Small",
+	"cardContentAlign": "Center",
 	"cardPerRow": null,
 	"cardStyle": null,
 	"cardHeightFit": false,
@@ -69,16 +69,16 @@
 	],
 	"tiles": [
 		{
-			"id": "32fbc6d5-0370-4da1-a89a-cd7bae88bbbe",
-			"name": "My Reels Admin",
-			"title": "My Reels Admin",
-			"ver": "24.8.6.833"
-		},
-		{
 			"id": "acfed9f5-f622-4de7-9094-e5b8772caa0b",
 			"name": "UserList",
-			"title": null,
-			"ver": "24.6.28.201"
+			"title": "User List Administration",
+			"ver": "24.8.8.349"
+		},
+		{
+			"id": "b0494b1d-4004-42b6-a913-e91ba1a930a8",
+			"name": "CollectionList",
+			"title": "Movie Reviews Administration",
+			"ver": "24.8.8.348"
 		}
 	]
 }

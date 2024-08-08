@@ -192,7 +192,7 @@
 	"documentation": [],
 	"name": "getReviews",
 	"endpoint": "/api/serverscript/getreviews",
-	"ver": "24.8.4.1957",
+	"ver": "24.8.8.430",
 	"version": null,
 	"description": "get reviews related to user",
 	"mediaType": null,

@@ -44,16 +44,16 @@
 	"description": "Personal Movie Collection Page",
 	"startApp": null,
 	"startWebApp": null,
-	"customLogo": null,
+	"customLogo": "/media/root/Media/MyReelsLogo.png",
 	"launchpadApp": "planet9_launchpad_standard",
 	"hideSidemenu": false,
-	"ui5Version": null,
-	"ui5Theme": "sap_belize",
+	"ui5Version": "1.84",
+	"ui5Theme": "sap_fiori_3_dark",
 	"header": "",
-	"customTheme": null,
+	"customTheme": "",
 	"isExternal": true,
-	"emailPattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$",
-	"loginApp": null,
+	"emailPattern": "",
+	"loginApp": "planet9_custom_login",
 	"enableNotifications": false,
 	"defaultLoginIDP": null,
 	"publicAccess": false,
@@ -68,7 +68,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "24.8.6.831",
+	"ver": "24.8.8.341",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,
@@ -84,13 +84,13 @@
 			"id": "34ee7866-b004-4c2c-8493-a2499f52b59d",
 			"name": "Welcome to My Reels",
 			"title": "My Reels",
-			"ver": "24.8.6.827"
+			"ver": "24.8.8.351"
 		},
 		{
 			"id": "00bd0013-2402-4cae-be5e-f206ec660bdb",
 			"name": "Administrative",
 			"title": "My Reels Administration",
-			"ver": "24.6.28.202"
+			"ver": "24.8.8.346"
 		}
 	]
 }

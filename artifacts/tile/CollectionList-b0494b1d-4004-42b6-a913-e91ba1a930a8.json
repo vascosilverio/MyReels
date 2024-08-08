@@ -10,7 +10,7 @@
 			"id": "e6b90c84-b616-4723-9ca4-97422fec39b9"
 		}
 	},
-	"title": null,
+	"title": "Movie Reviews Administration",
 	"subTitle": null,
 	"description": null,
 	"categoryID": null,
@@ -24,7 +24,7 @@
 	"openFullscreen": true,
 	"forceRow": false,
 	"frameType": null,
-	"type": "adaptive",
+	"type": "",
 	"image": null,
 	"icon": null,
 	"backgroundType": null,
@@ -61,7 +61,7 @@
 	"helpText": null,
 	"helpEnabled": false,
 	"openClickTile": false,
-	"ver": "24.6.28.1943",
+	"ver": "24.8.8.348",
 	"actionWebApp": "",
 	"name": "CollectionList",
 	"cardWidth": "",

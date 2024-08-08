@@ -5,9 +5,9 @@
 	"translation": [],
 	"storeItem": {},
 	"settings": null,
-	"title": null,
+	"title": "MyReels App",
 	"subTitle": null,
-	"description": null,
+	"description": "Open the My Reels App to explore movies, write and share reviews.",
 	"categoryID": null,
 	"sort": null,
 	"urlApplication": null,
@@ -19,12 +19,12 @@
 	"openFullscreen": true,
 	"forceRow": false,
 	"frameType": null,
-	"type": "application",
+	"type": "",
 	"image": null,
 	"icon": null,
 	"backgroundType": null,
-	"backgroundColor": null,
-	"backgroundShade": null,
+	"backgroundColor": "ColorSet4",
+	"backgroundShade": "ShadeB",
 	"tileApplication": "sdfghf",
 	"hideHeaderL": null,
 	"hideHeaderM": false,
@@ -56,12 +56,12 @@
 	"helpText": null,
 	"helpEnabled": false,
 	"openClickTile": false,
-	"ver": "24.8.6.827",
+	"ver": "24.8.8.351",
 	"actionWebApp": null,
 	"name": "MyReelsApp",
 	"cardWidth": "",
 	"cardHeight": null,
-	"cardHeightFit": false,
+	"cardHeightFit": true,
 	"cardImage": null,
 	"cardButtonIcon": "sap-icon://fa-solid/ticket-alt",
 	"cardButtonIconOnly": false,
@@ -76,5 +76,16 @@
 	"sapICFNode": null,
 	"actionType": "A",
 	"package": "cea714f9-70c7-451c-8090-517e9e6854f8",
-	"roles": []
+	"roles": [
+		{
+			"id": "b62d3e51-f95f-45f3-9d2d-c40bf0df873d",
+			"name": "normalUser",
+			"ver": "24.5.26.457"
+		},
+		{
+			"id": "71fc659e-df5c-4623-8b6e-086b7e39b799",
+			"name": "admin",
+			"ver": "24.5.26.459"
+		}
+	]
 }
